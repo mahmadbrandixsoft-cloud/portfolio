@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ahmad | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+        
+        :root {
+            --bg-dark: #030303;
+            --accent-blue: #4461FF;
+            --cyan-glow: #00F0FF;
+            --border-white: rgba(255, 255, 255, 0.08);
+        }
+
+        body {
+            font-family: 'Oswald', sans-serif;
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* 1. Background Grid & Glows */
+        .grid-bg {
+            position: fixed;
+            inset: 0;
+            z-index: -10;
+            background-image: 
+                linear-gradient(to right, rgba(255,255,255,0.015) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255,255,255,0.015) 1px, transparent 1px);
+            background-size: 70px 70px;
+        }
+
+        .radial-glow {
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(circle, rgba(68, 97, 255, 0.07) 0%, transparent 60%);
+            z-index: -5;
+            filter: blur(120px);
+            pointer-events: none;
+        }
+
+        /* 2. Navigation Glassmorphism */
+        nav {
+            backdrop-filter: blur(20px) saturate(200%);
+            -webkit-backdrop-filter: blur(20px) saturate(200%);
+            background-color: rgba(3, 3, 3, 0.7);
+            border-bottom: 1px solid var(--border-white);
+        }
+
+        /* 3. Massive Section Numbering (image_6fa72c.png style) */
+        .bg-number {
+            position: absolute;
+            right: 0;
+            top: 20px;
+            font-size: 15rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.02);
+            line-height: 1;
+            z-index: -1;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        /* 4. Brutalist Card & Interaction */
+        .card-brutal {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-white);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .card-brutal:hover {
+            border-color: var(--accent-blue);
+            background: rgba(68, 97, 255, 0.03);
+            transform: translateY(-5px);
+        }
+
+        .hero-title {
+            line-height: 0.82;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+
+        /* 5. Experience Timeline Styling */
+        .timeline-line {
+            width: 1px;
+            background: linear-gradient(to bottom, var(--accent-blue), transparent);
+            position: absolute;
+            left: 7px;
+            top: 0;
+            bottom: 0;
+        }
+        .timeline-dot {
+            width: 14px;
+            height: 14px;
+            background: var(--accent-blue);
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 8px;
+            box-shadow: 0 0 20px var(--accent-blue);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-bg"></div>
+    <div class="radial-glow"></div>
+
+    <nav class="fixed top-0 w-full z-50 px-8 py-5 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter italic">
+            AHMAD<span class="text-[#4461FF] not-italic">.</span>
+        </div>
+        <div class="hidden lg:flex gap-10 text-[10px] font-bold uppercase tracking-[0.4em] text-gray-500">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#skills" class="hover:text-white transition">Skills</a>
+            <a href="#experience" class="hover:text-white transition">Experience</a>
+            <a href="#projects" class="hover:text-white transition">Projects</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
+        </div>
+        <button class="bg-[#4461FF] text-white px-8 py-3 rounded-sm text-[11px] font-bold uppercase tracking-[0.2em] shadow-xl shadow-blue-900/40 active:scale-95 transition">
+            Let's Connect
+        </button>
+    </nav>
+
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+        <div class="mb-10">
+            <span class="px-6 py-2 border border-blue-500/30 bg-blue-500/10 text-[#4461FF] text-[10px] font-bold uppercase tracking-[0.6em] rounded-full">Hey, I'm</span>
+        </div>
+        <h2 class="text-gray-500 text-xl md:text-3xl font-light uppercase tracking-[0.6em] mb-6">Muhammad Ahmad</h2>
+        <h1 class="hero-title text-6xl md:text-8xl lg:text-[145px] font-bold text-white mb-12">
+            I Build, Test, and<br>Deliver<br>
+            <span class="text-[#4461FF]">High-Performance</span><br>Websites
+            <div class="flex items-center justify-center gap-6 mt-4">
+                <span class="w-24 h-1 bg-[#00F0FF] shadow-[0_0_20px_#00F0FF]"></span>
+                <span class="text-4xl md:text-6xl lg:text-[110px]">End to End, With No Gaps.</span>
+            </div>
+        </h1>
+        <div class="flex gap-8 mt-12">
+            <button class="bg-[#4461FF] px-14 py-6 text-[12px] font-bold uppercase tracking-[0.4em] flex items-center gap-4 group">
+                View My Work <i data-lucide="arrow-right" class="group-hover:translate-x-3 transition"></i>
+            </button>
+            <button class="border border-white/10 px-14 py-6 text-[12px] font-bold uppercase tracking-[0.4em] text-gray-400 hover:bg-white/5 transition">
+                Contact Me
+            </button>
+        </div>
+    </section>
+
+    <section id="about" class="py-40 px-6 max-w-7xl mx-auto relative overflow-hidden">
+        <div class="bg-number">01</div>
+        <div class="grid lg:grid-cols-2 gap-24 items-center">
+            <div class="space-y-10">
+                <div class="flex items-center gap-4">
+                    <span class="text-blue-500 font-bold">01</span>
+                    <div class="h-[1px] w-12 bg-blue-600"></div>
+                    <span class="text-gray-500 text-[10px] font-bold tracking-widest uppercase">About Me</span>
+                </div>
+                <h2 class="text-6xl font-bold uppercase leading-[0.9] text-white">
+                    Bridging the gap between <span class="text-[#4461FF]">building</span> and <span class="text-[#00F0FF]">breaking.</span>
+                </h2>
+                <p class="text-gray-400 text-lg font-light leading-relaxed max-w-lg">
+                    I am a Quality Assurance professional with a Master's degree in IT and Project Management. My foundation in computer science and extensive background in frontend development give me a unique edge in QA.
+                </p>
+            </div>
+            <div class="grid gap-6">
+                <div class="card-brutal p-10">
+                    <i data-lucide="shield-check" class="text-blue-500 w-10 h-10 mb-6"></i>
+                    <h3 class="text-xl font-bold uppercase mb-3">Quality Assurance</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Manual testing, SDLC, requirement analysis, and defect identification to ensure robust applications.</p>
+                </div>
+                <div class="card-brutal p-10">
+                    <i data-lucide="layout" class="text-blue-500 w-10 h-10 mb-6"></i>
+                    <h3 class="text-xl font-bold uppercase mb-3">Frontend Craft</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Translating complex requirements into clean, responsive, and highly performant user interfaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-40 px-6 relative border-t border-white/5">
+        <div class="bg-number">02</div>
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-7xl font-bold uppercase mb-20 text-center">Skills & <span class="text-blue-600">Expertise</span></h2>
+            <div class="grid md:grid-cols-3 gap-1">
+                <div class="card-brutal p-12">
+                    <h4 class="text-blue-500 font-bold uppercase tracking-widest text-[10px] mb-8">01 QA Specialist</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li>• SDLC & Agile Models</li>
+                        <li>• Manual Testing Techniques</li>
+                        <li>• Test Scenarios & Plans</li>
+                        <li>• Bug Life Cycle</li>
+                    </ul>
+                </div>
+                <div class="card-brutal p-12">
+                    <h4 class="text-blue-500 font-bold uppercase tracking-widest text-[10px] mb-8">02 Programming</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li>• HTML5 / CSS3 / Tailwind</li>
+                        <li>• JavaScript / React.js</li>
+                        <li>• SQL & Database Testing</li>
+                        <li>• Python Basics</li>
+                    </ul>
+                </div>
+                <div class="card-brutal p-12">
+                    <h4 class="text-blue-500 font-bold uppercase tracking-widest text-[10px] mb-8">03 CMS & Management</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li>• Webflow / Shopify</li>
+                        <li>• Jira / ClickUp / Trello</li>
+                        <li>• Figma / Adobe XD</li>
+                        <li>• Git / Version Control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-40 px-6 max-w-5xl mx-auto relative">
+        <div class="bg-number">03</div>
+        <h3 class="text-7xl font-bold uppercase mb-24">Experience</h3>
+        <div class="relative pl-10">
+            <div class="timeline-line"></div>
+            
+            <div class="mb-24 relative">
+                <div class="timeline-dot"></div>
+                <div class="flex flex-col md:flex-row justify-between mb-6">
+                    <div>
+                        <h4 class="text-3xl font-bold uppercase text-blue-500">Webflow Developer</h4>
+                        <p class="text-gray-500 uppercase tracking-widest text-[10px] mt-1">Deadon Agency • Contract • Remote</p>
+                    </div>
+                    <span class="text-[10px] border border-white/10 px-4 py-2 mt-4 md:mt-0 h-fit uppercase">Feb 2024 — Jun 2024</span>
+                </div>
+                <p class="text-gray-400 leading-relaxed font-light">Developed and launched responsive websites using Webflow, focusing on performance and structured layouts. Analyzed user interaction patterns to improve conversion flow.</p>
+            </div>
+
+            <div class="relative">
+                <div class="timeline-dot bg-gray-600 shadow-none"></div>
+                <div class="flex flex-col md:flex-row justify-between mb-6">
+                    <div>
+                        <h4 class="text-3xl font-bold uppercase text-gray-600">Frontend Developer</h4>
+                        <p class="text-gray-500 uppercase tracking-widest text-[10px] mt-1">Deal.ai • Contract • Remote</p>
+                    </div>
+                    <span class="text-[10px] border border-white/10 px-4 py-2 mt-4 md:mt-0 h-fit uppercase text-gray-600">Dec 2023 — Feb 2024</span>
+                </div>
+                <p class="text-gray-500 leading-relaxed font-light">Built marketing funnel pages from scratch using HTML, CSS, and JS ensuring seamless performance across all screen sizes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-40 px-6 text-center border-t border-white/5 bg-white/[0.01]">
+        <h2 class="text-8xl md:text-[12rem] font-bold uppercase italic mb-10 leading-none">
+            LET'S <span class="text-blue-600 not-italic">CONNECT.</span>
+        </h2>
+        <p class="text-gray-600 text-[11px] font-bold uppercase tracking-[1em] mb-24">I'M ALWAYS OPEN TO A GOOD CONVERSATION.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-1 max-w-5xl mx-auto">
+            <div class="card-brutal p-16">
+                <i data-lucide="mail" class="text-blue-600 mx-auto mb-6"></i>
+                <p class="text-sm font-bold uppercase">ahmadazhar955@gmail.com</p>
+            </div>
+            <div class="card-brutal p-16">
+                <i data-lucide="linkedin" class="text-blue-600 mx-auto mb-6"></i>
+                <p class="text-sm font-bold uppercase">LinkedIn Profile</p>
+            </div>
+            <div class="card-brutal p-16">
+                <i data-lucide="map-pin" class="text-blue-600 mx-auto mb-6"></i>
+                <p class="text-sm font-bold uppercase">Lahore, Pakistan</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-[10px] text-gray-700 font-bold uppercase tracking-[0.6em]">
+        © 2026 Muhammad Ahmad • Built for Performance
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

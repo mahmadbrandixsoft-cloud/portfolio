@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ahmad | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Importing Oswald for that exact condensed brutalist look */
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        
+        :root {
+            --accent-blue: #3b82f6;
+            --bg-dark: #030303;
+        }
+
+        body {
+            font-family: 'Oswald', sans-serif;
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            margin: 0;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* The vertical block grid from image_701124.png */
+        .grid-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+            background-size: 100px 100%;
+        }
+
+        /* Refined Radial Glow */
+        .radial-glow {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 900px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(80px);
+            pointer-events: none;
+        }
+
+        /* Glass Navigation with correct saturate filter from image_702acf.png */
+        nav {
+            backdrop-filter: blur(16px) saturate(200%);
+            -webkit-backdrop-filter: blur(16px) saturate(200%);
+            background-color: rgba(3, 3, 3, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Headline Spacing from image_6fa6f0.png */
+        .hero-title {
+            font-weight: 700;
+            line-height: 0.9;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+
+        /* Text Glow for visibility against blocks */
+        .text-glow-main {
+            text-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
+        }
+
+        /* Interaction: Moving Arrow */
+        .btn-work .arrow {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn-work:hover .arrow {
+            transform: translateX(10px);
+        }
+
+        /* Smooth scroll indicator animation */
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+        .scroll-indicator {
+            animation: bounce-slow 2s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-overlay"></div>
+    <div class="radial-glow"></div>
+
+    <nav class="fixed top-0 w-full z-50 px-8 py-5 flex justify-between items-center">
+        <div class="text-2xl font-bold italic tracking-tighter">
+            AHMAD<span class="text-blue-500 not-italic">.</span>
+        </div>
+        
+        <div class="hidden lg:flex items-center gap-10">
+            <a href="#about" class="text-[11px] font-medium uppercase tracking-[0.4em] text-gray-500 hover:text-white transition-colors">About</a>
+            <a href="#skills" class="text-[11px] font-medium uppercase tracking-[0.4em] text-gray-500 hover:text-white transition-colors">Skills</a>
+            <a href="#experience" class="text-[11px] font-medium uppercase tracking-[0.4em] text-gray-500 hover:text-white transition-colors">Experience</a>
+            <a href="#projects" class="text-[11px] font-medium uppercase tracking-[0.4em] text-gray-500 hover:text-white transition-colors">Projects</a>
+            <a href="#education" class="text-[11px] font-medium uppercase tracking-[0.4em] text-gray-500 hover:text-white transition-colors">Education</a>
+        </div>
+
+        <a href="#contact" class="text-[11px] font-bold uppercase tracking-[0.25em] bg-blue-600 text-white px-8 py-3.5 hover:bg-blue-700 transition-all active:scale-95 shadow-lg shadow-blue-900/20">
+            Let's Connect
+        </a>
+    </nav>
+
+    <main class="relative min-h-screen flex flex-col justify-center items-center px-6 pt-32 text-center">
+        
+        <div class="mb-10">
+            <span class="px-6 py-2 border border-blue-500/30 bg-blue-500/10 text-blue-400 text-[10px] font-bold uppercase tracking-[0.6em] rounded-sm">
+                HEY, I'M
+            </span>
+        </div>
+
+        <h2 class="text-gray-500 text-xl md:text-3xl font-light uppercase tracking-[0.5em] mb-8">
+            MUHAMMAD AHMAD
+        </h2>
+
+        <div class="max-w-[1300px] mb-16">
+            <h1 class="hero-title text-6xl md:text-9xl lg:text-[160px] text-white text-glow-main">
+                I BUILD, TEST, AND<br>
+                DELIVER<br>
+                <span class="text-blue-600">HIGH-PERFORMANCE</span><br>
+                WEBSITES<br>
+                <div class="flex items-center justify-center gap-6 flex-wrap mt-4">
+                    <span class="hidden md:block w-32 h-[4px] bg-cyan-400"></span>
+                    <span>END TO END, WITH NO GAPS.</span>
+                </div>
+            </h1>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-5 mb-24">
+            <span class="px-8 py-3 border border-white/5 bg-white/[0.01] text-[10px] font-medium uppercase tracking-[0.4em] text-gray-500 hover:border-white/20 transition-colors">Webflow Developer</span>
+            <span class="px-8 py-3 border border-white/5 bg-white/[0.01] text-[10px] font-medium uppercase tracking-[0.4em] text-gray-500 hover:border-white/20 transition-colors">QA Engineer</span>
+            <span class="px-8 py-3 border border-white/5 bg-white/[0.01] text-[10px] font-medium uppercase tracking-[0.4em] text-gray-500 hover:border-white/20 transition-colors">Project Manager</span>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-8 items-center">
+            <button class="btn-work group bg-blue-600 text-white font-bold py-6 px-14 uppercase text-[12px] tracking-[0.4em] flex items-center gap-5 transition-all hover:bg-blue-500 hover:shadow-2xl hover:shadow-blue-600/30">
+                VIEW MY WORK
+                <i data-lucide="arrow-right" class="arrow w-6 h-6"></i>
+            </button>
+            <button class="border border-white/10 py-6 px-14 uppercase text-[12px] tracking-[0.4em] font-bold text-gray-500 hover:bg-white/[0.03] hover:text-white transition-all">
+                CONTACT ME
+            </button>
+        </div>
+
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-30 text-center">
+            <span class="text-[10px] font-bold uppercase tracking-[1em] text-gray-600">EXPLORE</span>
+            <div class="scroll-indicator w-[1px] h-20 bg-gradient-to-b from-blue-600 to-transparent mx-auto mt-6"></div>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
