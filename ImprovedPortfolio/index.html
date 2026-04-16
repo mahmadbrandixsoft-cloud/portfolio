@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Muhammad Ahmad - Webflow Developer & QA Engineer specializing in building and testing high-performance websites. Expert in Webflow, React, and quality assurance."/>
+    <meta name="theme-color" content="#0e0e0f"/>
+    <meta property="og:title" content="Muhammad Ahmad | Webflow Developer & QA Engineer"/>
+    <meta property="og:description" content="Building, testing, and delivering high-performance websites - end to end."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://muhammadahmad.info"/>
+    <meta property="og:image" content="https://example.com/your-image.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Muhammad Ahmad | Webflow Developer & QA Engineer"/>
+    <meta name="twitter:description" content="Building, testing, and delivering high-performance websites - end to end."/>
+    <meta name="twitter:image" content="https://example.com/your-image.jpg"/>
+    <link rel="canonical" href="https://muhammadahmad.info"/>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="tailwind-config.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Ahmad",
+        "jobTitle": "Webflow Developer & QA Engineer",
+        "url": "https://muhammadahmad.info",
+        "sameAs": [
+            "https://linkedin.com/in/muhammadahmad"
+        ]
+    }
+    </script>
+</head>
+<body class="selection:bg-primary selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-zinc-950/60 backdrop-blur-xl flex justify-between items-center px-4 md:px-8 py-4 max-w-full mx-auto">
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-primary focus:text-zinc-950 focus:px-4 focus:py-2 focus:z-50 focus:rounded">
+Skip to main content
+</a>
+<div class="text-lg font-bold tracking-tighter text-cyan-400 font-headline uppercase">MUHAMMAD AHMAD</div>
+<button id="mobile-menu-btn" class="md:hidden text-zinc-400 hover:text-zinc-100 p-2" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<div id="mobile-menu" class="hidden md:flex gap-8 absolute md:relative top-full md:top-auto left-0 md:left-auto w-full md:w-auto bg-zinc-950/95 md:bg-transparent flex-col md:flex-row p-4 md:p-0">
+<a class="text-zinc-400 font-medium hover:text-zinc-100 transition-colors font-headline uppercase text-xs tracking-widest" href="#about">About</a>
+<a class="text-zinc-400 font-medium hover:text-zinc-100 transition-colors font-headline uppercase text-xs tracking-widest" href="#skills">Skills</a>
+<a class="text-zinc-400 font-medium hover:text-zinc-100 transition-colors font-headline uppercase text-xs tracking-widest" href="#experience">Experience</a>
+<a class="text-zinc-400 font-medium hover:text-zinc-100 transition-colors font-headline uppercase text-xs tracking-widest" href="#projects">Projects</a>
+<a class="text-zinc-400 font-medium hover:text-zinc-100 transition-colors font-headline uppercase text-xs tracking-widest" href="#education">Education</a>
+</div>
+<button class="bg-primary text-on-primary-container px-6 py-2 font-headline font-bold uppercase text-xs tracking-widest hover:scale-95 transition-all duration-300" aria-label="Go to contact section">Let's Connect</button>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex flex-col items-center justify-center pt-24 px-8 overflow-hidden bg-transparent">
+<div class="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-tertiary/10 rounded-full blur-[120px]"></div>
+<div class="relative z-10 text-center max-w-6xl mx-auto">
+<span class="font-label text-xs tracking-[0.4em] text-primary uppercase mb-6 block">Webflow Developer • QA Engineer • Project Manager</span>
+<h1 class="font-headline text-5xl md:text-8xl font-bold leading-[0.9] tracking-tighter uppercase mb-12">
+                I BUILD, TEST, AND DELIVER <br/>
+<span class="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent text-glow">HIGH-PERFORMANCE</span> <br/>
+                WEBSITES — END TO END.
+            </h1>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center mt-8">
+<button class="group relative px-10 py-5 bg-primary text-on-primary font-headline font-extrabold uppercase tracking-widest overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(143,245,255,0.3)]">
+<span class="relative z-10">VIEW MY WORK</span>
+</button>
+<button class="px-10 py-5 border-2 border-outline-variant text-on-surface font-headline font-extrabold uppercase tracking-widest hover:bg-white/5 transition-all duration-300">
+                    CONTACT ME
+                </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-50">
+<span class="font-label text-[10px] tracking-widest uppercase">Scroll to explore</span>
+<div class="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
+</div>
+</header>
+<main id="main">
+<!-- About Section -->
+<section class="py-40 px-8 bg-transparent" id="about">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-5 sticky top-32">
+<span class="font-headline text-8xl font-black text-white/5 absolute -top-16 -left-8">01</span>
+<h2 class="font-headline text-5xl md:text-6xl font-bold leading-tight uppercase mb-8">
+                        BRIDGING THE GAP BETWEEN <span class="text-primary">BUILDING</span> AND <span class="text-tertiary">BREAKING</span>.
+                    </h2>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed mb-12">
+                        Precision is not an accident. As a developer who doubles as a QA Engineer, I don't just build features—I architect resilient systems that withstand the pressure of scale and the unpredictability of user behavior.
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<span class="font-label text-sm uppercase tracking-widest font-bold">All Systems Functional</span>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-8 bg-surface-container-high card-hover-cyan flex flex-col gap-6">
+<span class="material-symbols-outlined text-4xl text-primary transition-all duration-300" data-weight="fill">verified_user</span>
+<h3 class="font-headline text-2xl font-bold uppercase">Quality Assurance</h3>
+<p class="font-body text-on-surface-variant">Automated and manual testing pipelines ensuring zero-defect deployments for enterprise-grade applications.</p>
+</div>
+<div class="p-8 bg-surface-container-high card-hover-cyan flex flex-col gap-6">
+<span class="material-symbols-outlined text-4xl text-secondary transition-all duration-300" data-weight="fill">terminal</span>
+<h3 class="font-headline text-2xl font-bold uppercase">Frontend Craft</h3>
+<p class="font-body text-on-surface-variant">High-performance Webflow development with custom React integrations and technical SEO optimization.</p>
+</div>
+<div class="p-8 bg-surface-container-high card-hover-cyan flex flex-col gap-6">
+<span class="material-symbols-outlined text-4xl text-tertiary transition-all duration-300" data-weight="fill">bug_report</span>
+<h3 class="font-headline text-2xl font-bold uppercase">Defect Tracking</h3>
+<p class="font-body text-on-surface-variant">Systematic identification, reporting, and management of technical debt and critical vulnerabilities.</p>
+</div>
+<div class="p-8 bg-surface-container-high card-hover-cyan flex flex-col gap-6">
+<span class="material-symbols-outlined text-4xl text-on-surface transition-all duration-300" data-weight="fill">account_tree</span>
+<h3 class="font-headline text-2xl font-bold uppercase">Project Delivery</h3>
+<p class="font-body text-on-surface-variant">Agile management focusing on velocity and the elimination of communication gaps between teams.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Marquee -->
+<section class="py-20 border-y border-outline-variant/15 overflow-hidden" id="skills">
+<div class="max-w-7xl mx-auto relative">
+<span class="font-headline text-8xl font-black text-white/5 absolute -top-16 -left-8">02</span>
+<div class="marquee font-headline text-4xl md:text-6xl font-bold uppercase text-white/10 tracking-tighter">
+<div class="marquee-content">
+<span>Webflow</span>
+<span class="text-primary">HTML5</span>
+<span>CSS3</span>
+<span class="text-secondary">Javascript</span>
+<span>React</span>
+<span class="text-tertiary">Shopify</span>
+<span>QA Automation</span>
+<span class="text-primary">Jira</span>
+<span>Selenium</span>
+</div>
+<div class="marquee-content">
+<span>Webflow</span>
+<span class="text-primary">HTML5</span>
+<span>CSS3</span>
+<span class="text-secondary">Javascript</span>
+<span>React</span>
+<span class="text-tertiary">Shopify</span>
+<span>QA Automation</span>
+<span class="text-primary">Jira</span>
+<span>Selenium</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="py-40 px-8 bg-transparent" id="experience">
+<div class="max-w-5xl mx-auto">
+<div class="mb-24 relative">
+<span class="font-headline text-8xl font-black text-white/5 absolute -mt-16 -ml-8">03</span>
+<span class="font-label text-xs tracking-[0.4em] text-primary uppercase mb-4 block relative">Professional Journey</span>
+<h2 class="font-headline text-5xl font-bold uppercase tracking-tighter relative">Engineering Tenure</h2>
+</div>
+<div class="space-y-32 relative">
+<div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-outline-variant/20 hidden md:block"></div>
+<!-- Role 1 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 group">
+<div class="md:text-right flex flex-col justify-center">
+<span class="font-label text-primary text-sm font-bold tracking-widest mb-2">2023 — PRESENT</span>
+<h3 class="font-headline text-3xl font-bold uppercase">Season Agency</h3>
+<p class="font-body text-on-surface-variant italic">Senior Webflow Developer &amp; QA Lead</p>
+</div>
+<div class="absolute left-[-8px] md:left-1/2 md:-ml-2 top-0 md:top-1/2 w-4 h-4 rounded-full bg-primary ring-8 ring-primary/10 transition-transform group-hover:scale-150"></div>
+<div class="bg-surface-container-low p-8 border-l-2 border-primary card-hover-cyan">
+<p class="font-body text-on-surface-variant leading-relaxed">Orchestrating high-end Webflow builds for international fashion brands. Implementing rigorous QA protocols reducing post-launch defects by 40%.</p>
+</div>
+</div>
+<!-- Role 2 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 group">
+<div class="md:order-2 text-left flex flex-col justify-center">
+<span class="font-label text-secondary text-sm font-bold tracking-widest mb-2">2022 — 2023</span>
+<h3 class="font-headline text-3xl font-bold uppercase">Zeal AI</h3>
+<p class="font-body text-on-surface-variant italic">Full-stack Developer</p>
+</div>
+<div class="absolute left-[-8px] md:left-1/2 md:-ml-2 top-0 md:top-1/2 w-4 h-4 rounded-full bg-secondary ring-8 ring-secondary/10 transition-transform group-hover:scale-150"></div>
+<div class="md:order-1 bg-surface-container-low p-8 border-r-2 border-secondary text-right card-hover-cyan">
+<p class="font-body text-on-surface-variant leading-relaxed">Engineered scalable dashboard interfaces for AI-driven logistics tracking. Specialized in complex state management and API orchestration.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Projects -->
+<section class="py-40 px-8 bg-transparent" id="projects">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl relative">
+<span class="font-headline text-8xl font-black text-white/5 absolute -mt-16 -ml-8">04</span>
+<h2 class="font-headline text-6xl font-bold uppercase tracking-tighter mb-6 relative">SELECTED <br/> ARTIFACTS</h2>
+<p class="font-body text-xl text-on-surface-variant relative">A collection of systems engineered for performance, designed for conversion, and tested for resilience.</p>
+</div>
+<div class="flex gap-4">
+<div class="px-6 py-3 bg-surface-container-high font-label text-xs uppercase tracking-widest border border-transparent hover:border-cyan-400 transition-colors">48+ Completed Projects</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-8 group relative aspect-[16/10] bg-surface-container-high overflow-hidden border border-transparent hover:border-cyan-400 transition-all duration-300">
+<img alt="The Highest of Stakes Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkVsev4IsWJ_uIyQPDQRtDvE2-2NPtrV0nbkXiy9l_R2NeUSt1lJi4iWJ5UfWVZMvQ2L1az6mStBm-czz_MicsJu-1eIKVApujW1zECiOI0iS_HTkvkA0hP5oraM5guupvrmXEJGcaSDIBTnfYYsRFA5fSNz6FZBDGDPBK3USUNjeFzVZC8_UfLbdrk_EbztT9xqbEssiA9JnnCNvvpEKKcJ3mhLplAomBxrLcIkBHJCCxczIj5rRae6-vmKVtafR4Dm6Xhupf0xdV" loading="lazy" decoding="async"/>
+<div class="absolute inset-0 p-12 flex flex-col justify-end bg-gradient-to-t from-surface-container-lowest to-transparent">
+<span class="font-label text-primary text-xs uppercase tracking-widest mb-4">Webflow / GSAP / Custom JS</span>
+<h3 class="font-headline text-4xl font-bold uppercase mb-4">The Highest of Stakes</h3>
+<p class="font-body text-on-surface-variant max-w-lg mb-8">Full-scale digital identity and custom animation engine for a high-risk investment documentary brand.</p>
+<button class="w-fit font-label text-sm uppercase tracking-widest flex items-center gap-2 group/btn">
+                            Explore Case Study <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-2">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="md:col-span-4 group relative bg-surface-container-high overflow-hidden flex flex-col border border-transparent hover:border-cyan-400 transition-all duration-300">
+<div class="h-1/2 overflow-hidden">
+<img alt="Dressbarn Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtkGmz6xxAMoPp-S3sfXYSsOzzkkLwudRKaokydVB9cH4XLNMyLrW1nIUK4gK4AKkZD-cNBKyMhb_UXQ722tprDREQKZwewwSzbuvu25Lgvvf-_ve-Mj2gzzCtcOyP2CJAUfM7AjEbK9nbSHb-d4Sd9wnrjKde6NxNE7PCoK3B6ORRr13l1pJa45WxMQ4VZAIlc4wsME5Bg2rn6uWTvbDWP8GKy8hbV22M3R7vZGJXvEGJJi3AWsdoUSw_lD_INuTwrHwfW_lB9p-D" loading="lazy" decoding="async"/>
+</div>
+<div class="p-8 flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label text-secondary text-xs uppercase tracking-widest mb-2 block">Shopify / QA Auditing</span>
+<h3 class="font-headline text-2xl font-bold uppercase mb-2">Dressbarn</h3>
+<p class="font-body text-sm text-on-surface-variant">Conversion rate optimization and technical SEO audit for a multi-million dollar e-commerce platform.</p>
+</div>
+<button class="mt-6 text-primary material-symbols-outlined self-end transition-transform group-hover:scale-125 group-hover:text-cyan-400">open_in_new</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education Section -->
+<section class="py-40 px-8 bg-transparent relative" id="education">
+<div class="max-w-7xl mx-auto">
+<span class="font-headline text-8xl font-black text-white/5 absolute -mt-16 -ml-8">05</span>
+<div class="mb-20 relative">
+<span class="font-label text-xs tracking-[0.4em] text-primary uppercase mb-4 block">Academic Background</span>
+<h2 class="font-headline text-6xl font-bold uppercase tracking-tighter">Education</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-8 bg-surface-container-low border-l-4 border-primary group hover:bg-surface-container-high card-hover-cyan transition-all">
+<div class="flex items-start justify-between mb-4">
+<span class="material-symbols-outlined text-primary text-4xl transition-all duration-300">school</span>
+<span class="font-label text-[10px] uppercase tracking-widest text-zinc-500">2020 — 2022</span>
+</div>
+<h3 class="font-headline text-2xl font-bold uppercase mb-1">MSc Information Technology</h3>
+<p class="font-body text-on-surface-variant mb-4">COMSATS University | Islamabad, Pakistan</p>
+<span class="font-label text-xs bg-primary/10 text-primary px-3 py-1 rounded-full">Distinction</span>
+</div>
+<div class="p-8 bg-surface-container-low border-l-4 border-outline-variant group hover:bg-surface-container-high card-hover-cyan transition-all">
+<div class="flex items-start justify-between mb-4">
+<span class="material-symbols-outlined text-on-surface-variant text-4xl transition-all duration-300">history_edu</span>
+<span class="font-label text-[10px] uppercase tracking-widest text-zinc-500">2016 — 2020</span>
+</div>
+<h3 class="font-headline text-2xl font-bold uppercase mb-1">BSc Computer Science</h3>
+<p class="font-body text-on-surface-variant">The Islamia University | Bahawalpur, Pakistan</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Certifications Section -->
+<section class="py-40 px-8 bg-transparent relative" id="certifications">
+<div class="max-w-7xl mx-auto">
+<span class="font-headline text-8xl font-black text-white/5 absolute -mt-16 -ml-8">06</span>
+<div class="mb-20 relative">
+<span class="font-label text-xs tracking-[0.4em] text-secondary uppercase mb-4 block">Verified Expertise</span>
+<h2 class="font-headline text-6xl font-bold uppercase tracking-tighter">Certifications</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+<div class="p-6 bg-surface-container-high card-hover-cyan flex flex-col items-center justify-center text-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl transition-all duration-300">verified</span>
+<span class="font-label text-[10px] uppercase tracking-widest leading-tight">Webflow Certified Expert</span>
+</div>
+<div class="p-6 bg-surface-container-high card-hover-cyan flex flex-col items-center justify-center text-center gap-3">
+<span class="material-symbols-outlined text-secondary text-3xl transition-all duration-300">terminal</span>
+<span class="font-label text-[10px] uppercase tracking-widest leading-tight">ISTQB Foundation Level</span>
+</div>
+<div class="p-6 bg-surface-container-high card-hover-cyan flex flex-col items-center justify-center text-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-3xl transition-all duration-300">dashboard</span>
+<span class="font-label text-[10px] uppercase tracking-widest leading-tight">Google Project Management</span>
+</div>
+<div class="p-6 bg-surface-container-high card-hover-cyan flex flex-col items-center justify-center text-center gap-3">
+<span class="material-symbols-outlined text-zinc-400 text-3xl transition-all duration-300">monitoring</span>
+<span class="font-label text-[10px] uppercase tracking-widest leading-tight">Technical SEO Mastery</span>
+</div>
+<div class="p-6 bg-surface-container-high card-hover-cyan flex flex-col items-center justify-center text-center gap-3">
+<span class="material-symbols-outlined text-zinc-400 text-3xl transition-all duration-300">code</span>
+<span class="font-label text-[10px] uppercase tracking-widest leading-tight">React Performance Eng.</span>
+</div>
+<div class="p-6 bg-surface-container-high card-hover-cyan flex flex-col items-center justify-center text-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl transition-all duration-300">workspace_premium</span>
+<span class="font-label text-[10px] uppercase tracking-widest leading-tight">Agile Scrum Master</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Let's Connect Section -->
+<section class="bg-zinc-950 w-full py-32 px-8 overflow-hidden relative border-t border-white/5" id="connect">
+<div class="max-w-7xl mx-auto flex flex-col items-center relative">
+<span class="font-label text-[10px] tracking-[0.6em] text-zinc-500 uppercase mb-8">END OF THE LINE</span>
+<h2 class="font-headline text-7xl md:text-9xl font-bold uppercase tracking-tighter leading-none mb-12">
+                LET'S <span class="text-cyan-400">CONNECT.</span>
+</h2>
+<p class="font-body text-xl text-zinc-400 max-w-2xl text-center mx-auto mb-20">
+                Whether you have a role in mind, a project to test, or just want to talk quality — I'm always open to a good conversation.
+            </p>
+<!-- Contact Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-16" role="list">
+<!-- Row 1 -->
+<div class="p-8 bg-zinc-900/50 card-hover-cyan flex flex-col items-center gap-4 group hover:bg-zinc-800/50 transition-colors border border-white/5">
+<span class="material-symbols-outlined text-cyan-400 text-2xl transition-all duration-300">mail</span>
+<div class="text-center">
+<span class="font-label text-[10px] text-zinc-500 uppercase tracking-widest block mb-1">Email</span>
+<p class="font-headline font-bold text-lg">ahmadakbar955@gmail.com</p>
+</div>
+</div>
+<div class="p-8 bg-zinc-900/50 card-hover-cyan flex flex-col items-center gap-4 group hover:bg-zinc-800/50 transition-colors border border-white/5">
+<span class="material-symbols-outlined text-cyan-400 text-2xl transition-all duration-300">call</span>
+<div class="text-center">
+<span class="font-label text-[10px] text-zinc-500 uppercase tracking-widest block mb-1">Phone (PK)</span>
+<p class="font-headline font-bold text-lg">+92 304 4244436</p>
+</div>
+</div>
+<div class="p-8 bg-zinc-900/50 card-hover-cyan flex flex-col items-center gap-4 group hover:bg-zinc-800/50 transition-colors border border-white/5">
+<span class="material-symbols-outlined text-cyan-400 text-2xl transition-all duration-300">dialpad</span>
+<div class="text-center">
+<span class="font-label text-[10px] text-zinc-500 uppercase tracking-widest block mb-1">Phone (UK)</span>
+<p class="font-headline font-bold text-lg">+44 7342 882804</p>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="p-8 bg-zinc-900/50 card-hover-cyan flex flex-col items-center gap-4 group hover:bg-zinc-800/50 transition-colors border border-white/5">
+<span class="material-symbols-outlined text-cyan-400 text-2xl transition-all duration-300">location_on</span>
+<div class="text-center">
+<span class="font-label text-[10px] text-zinc-500 uppercase tracking-widest block mb-1">Location</span>
+<p class="font-headline font-bold text-lg">Lahore, Pakistan</p>
+</div>
+</div>
+<div class="p-8 bg-zinc-900/50 card-hover-cyan flex flex-col items-center gap-4 group hover:bg-zinc-800/50 transition-colors border border-white/5">
+<span class="material-symbols-outlined text-cyan-400 text-2xl transition-all duration-300">share</span>
+<div class="text-center">
+<span class="font-label text-[10px] text-zinc-500 uppercase tracking-widest block mb-1">LinkedIn</span>
+<p class="font-headline font-bold text-lg">linkedin.com/in/muhammadahmad</p>
+</div>
+</div>
+<div class="p-8 bg-zinc-900/50 card-hover-cyan flex flex-col items-center gap-4 group hover:bg-zinc-800/50 transition-colors border border-white/5">
+<span class="material-symbols-outlined text-cyan-400 text-2xl transition-all duration-300">language</span>
+<div class="text-center">
+<span class="font-label text-[10px] text-zinc-500 uppercase tracking-widest block mb-1">Website</span>
+<p class="font-headline font-bold text-lg">muhammadahmad.info</p>
+</div>
+</div>
+</div>
+<!-- Footer Buttons Area -->
+<div class="relative w-full flex flex-col items-center">
+<!-- Large Background Text -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-headline text-[120px] md:text-[220px] font-black text-white/[0.03] pointer-events-none select-none tracking-tighter">CONTACT</div>
+<div class="flex flex-col md:flex-row gap-6 items-center relative z-10">
+<button class="bg-cyan-400 text-zinc-950 px-12 py-5 font-headline font-bold uppercase tracking-widest text-sm hover:scale-105 transition-transform flex items-center gap-3">
+                        SEND A MESSAGE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="border border-white/20 text-white px-12 py-5 font-headline font-bold uppercase tracking-widest text-sm hover:bg-white/5 transition-colors flex items-center gap-3">
+<span class="material-symbols-outlined text-sm">open_in_new</span> VIEW LINKEDIN
+                    </button>
+</div>
+</div>
+<div class="mt-40 pt-12 border-t border-white/5 w-full text-center">
+<div class="text-lg font-bold text-cyan-400 font-headline tracking-tighter uppercase mb-4">MUHAMMAD AHMAD</div>
+<p class="font-label uppercase tracking-[0.2em] text-[10px] text-zinc-600">
+                    © 2024 Muhammad Ahmad. Crafted with precision.
+                </p>
+</div>
+</div>
+</section>
+</main>
+<script>
+document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+  const menu = document.getElementById('mobile-menu');
+  const isExpanded = this.getAttribute('aria-expanded') === 'true';
+  this.setAttribute('aria-expanded', !isExpanded);
+  menu.classList.toggle('hidden');
+});
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mobile-menu')?.classList.add('hidden');
+    document.getElementById('mobile-menu-btn')?.setAttribute('aria-expanded', 'false');
+  });
+});
+</script>
+</body>
+</html>

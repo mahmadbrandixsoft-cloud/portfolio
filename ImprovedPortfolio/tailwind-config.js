@@ -1,0 +1,76 @@
+/* filepath: c:\Users\HP\Desktop\My Workplace\Portfolio\ImprovedPortfolio\tailwind-config.js */
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            "colors": {
+                "surface-container-high": "#201f21",
+                "on-primary-fixed": "#003f43",
+                "surface-tint": "#8ff5ff",
+                "error": "#ff716c",
+                "secondary": "#00dcfc",
+                "on-tertiary-fixed-variant": "#003b68",
+                "inverse-primary": "#006a71",
+                "secondary-container": "#006878",
+                "on-primary-fixed-variant": "#005e64",
+                "outline": "#767576",
+                "on-primary": "#005d63",
+                "primary-dim": "#00deec",
+                "surface-container-lowest": "#000000",
+                "surface-container": "#1a191b",
+                "tertiary": "#65afff",
+                "surface-dim": "#0e0e0f",
+                "on-secondary-fixed-variant": "#005967",
+                "secondary-fixed-dim": "#00d6f5",
+                "primary-fixed-dim": "#00deec",
+                "background": "#0e0e0f",
+                "outline-variant": "#484849",
+                "primary-container": "#00eefc",
+                "on-secondary-container": "#ebfbff",
+                "secondary-fixed": "#55e3ff",
+                "on-secondary": "#004955",
+                "surface-bright": "#2c2c2d",
+                "inverse-on-surface": "#565556",
+                "error-dim": "#d7383b",
+                "on-background": "#ffffff",
+                "primary": "#8ff5ff",
+                "surface-container-low": "#131314",
+                "tertiary-fixed": "#72b5ff",
+                "on-error-container": "#ffa8a3",
+                "on-surface": "#ffffff",
+                "on-tertiary-container": "#00213e",
+                "inverse-surface": "#fcf8f9",
+                "surface": "#0e0e0f",
+                "on-primary-container": "#005359",
+                "tertiary-container": "#4aa2f9",
+                "on-tertiary-fixed": "#001930",
+                "on-tertiary": "#002e52",
+                "primary-fixed": "#00eefc",
+                "on-surface-variant": "#adaaab",
+                "on-error": "#490006",
+                "on-secondary-fixed": "#003a44",
+                "tertiary-fixed-dim": "#51a7fe",
+                "surface-container-highest": "#262627",
+                "error-container": "#9f0519",
+                "secondary-dim": "#00cdeb",
+                "surface-variant": "#262627",
+                "tertiary-dim": "#4aa2f9"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Space Grotesk"],
+                "body": ["Manrope"],
+                "label": ["Inter"]
+            },
+            "cyan": {
+                "400": "#00dcfc",
+                "500": "#00b8c4"
+            }
+        },
+    },
+}
