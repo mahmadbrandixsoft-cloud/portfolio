@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Ahmad | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #050507; color: #e2e8f0; }
+    .text-gradient { background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .bg-gradient-accent { background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%); }
+    .glass-card { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(99, 102, 241, 0.1); }
+    .section-number { font-size: 8rem; font-weight: 900; color: rgba(99, 102, 241, 0.08); line-height: 1; }
+    .glow-line { height: 1px; background: linear-gradient(90deg, transparent, #6366f1, transparent); }
+    .tag { background: rgba(99, 102, 241, 0.15); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.25); }
+    .btn-primary { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); transition: all 0.3s ease; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(99, 102, 241, 0.3); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { border-color: rgba(99, 102, 241, 0.3); transform: translateY(-4px); }
+    .experience-bar { width: 2px; background: linear-gradient(180deg, #6366f1, #a855f7); }
+    .dot { width: 8px; height: 8px; background: #6366f1; border-radius: 50%; box-shadow: 0 0 10px #6366f1; }
+    .skill-pill { background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(99, 102, 241, 0.2); }
+  </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-[#050507]/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold tracking-tight">AHMAD.</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <a href="#about" class="hover:text-white transition-colors">ABOUT ME</a>
+        <a href="#skills" class="hover:text-white transition-colors">SKILLS</a>
+        <a href="#experience" class="hover:text-white transition-colors">EXPERIENCE</a>
+        <a href="#projects" class="hover:text-white transition-colors">PROJECTS</a>
+        <a href="#education" class="hover:text-white transition-colors">EDUCATION</a>
+      </div>
+      <a href="#contact" class="btn-primary px-5 py-2 rounded text-sm font-semibold text-white">LET'S CONNECT</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[120px]"></div>
+    </div>
+    <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
+      <p class="text-indigo-400 font-semibold tracking-widest text-sm mb-4">HI, I'M</p>
+      <h1 class="text-5xl md:text-7xl font-black text-white mb-2">MUHAMMAD AHMAD</h1>
+      <h2 class="text-3xl md:text-5xl font-black text-white leading-tight mb-6">
+        I BUILD, TEST, AND DELIVER<br>
+        <span class="text-gradient">HIGH-PERFORMANCE WEBSITES</span><br>
+        <span class="text-white">— END TO END, WITH NO GAPS.</span>
+      </h2>
+      <div class="flex flex-wrap justify-center gap-4 text-xs md:text-sm text-slate-400 font-medium mb-8">
+        <span>WEBFLOW DEVELOPER</span>
+        <span class="text-indigo-500">•</span>
+        <span>QA ENGINEER</span>
+        <span class="text-indigo-500">•</span>
+        <span>PROJECT MANAGER</span>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#projects" class="btn-primary px-8 py-3 rounded font-bold text-white flex items-center gap-2">VIEW MY WORK <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        <a href="#contact" class="px-8 py-3 rounded font-bold text-white border border-white/20 hover:bg-white/5 transition-colors">CONTACT ME</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row gap-16">
+        <div class="lg:w-1/2">
+          <p class="text-indigo-400 text-sm font-bold tracking-widest mb-2">01 — ABOUT ME</p>
+          <h2 class="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+            BRIDGING THE GAP BETWEEN <span class="text-gradient">BUILDING</span> AND <span class="text-gradient">BREAKING.</span>
+          </h2>
+          <div class="space-y-4 text-slate-400 text-sm leading-relaxed">
+            <p>I am a Quality Assurance professional with a Master's degree in IT and Project Management from the University of the West of Scotland. My foundation in computer science and extensive background in frontend development give me a unique edge in QA.</p>
+            <p>Because I know how applications are built, I know exactly where they might break. This technical perspective enables highly effective manual testing, sharp requirement analysis, and precise defect identification.</p>
+            <p>I am detail-oriented, a strong communicator, and highly experienced in collaborating with both developers and non-technical stakeholders. My clear goal is to grow further into Manual QA and Automation Testing roles, ensuring digital products perform flawlessly.</p>
+          </div>
+        </div>
+        <div class="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="glass-card p-6 rounded-xl card-hover">
+            <div class="w-10 h-10 rounded-lg bg-indigo-500/20 flex items-center justify-center mb-4"><i data-lucide="shield-check" class="w-5 h-5 text-indigo-400"></i></div>
+            <h3 class="font-bold text-white mb-2">QUALITY ASSURANCE</h3>
+            <p class="text-xs text-slate-400">Manual testing, SDLC, requirement analysis, and defect identification to ensure robust applications.</p>
+          </div>
+          <div class="glass-card p-6 rounded-xl card-hover">
+            <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center mb-4"><i data-lucide="layout" class="w-5 h-5 text-purple-400"></i></div>
+            <h3 class="font-bold text-white mb-2">FRONTEND CRAFT</h3>
+            <p class="text-xs text-slate-400">Translating complex requirements into clean, responsive, and highly performant user interfaces.</p>
+          </div>
+          <div class="glass-card p-6 rounded-xl card-hover md:col-span-2">
+            <div class="w-10 h-10 rounded-lg bg-pink-500/20 flex items-center justify-center mb-4"><i data-lucide="bug" class="w-5 h-5 text-pink-400"></i></div>
+            <h3 class="font-bold text-white mb-2">DEFECT TRACKING</h3>
+            <p class="text-xs text-slate-400">Systematic bug reporting and collaboration with developers to maintain high-quality standards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24 relative overflow-hidden">
+    <div class="absolute right-0 top-0 pointer-events-none select-none"><span class="section-number">02</span></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <p class="text-indigo-400 text-sm font-bold tracking-widest mb-2">TECHNICAL ARSENAL</p>
+      <h2 class="text-4xl md:text-5xl font-black text-white mb-10">SKILLS & EXPERTISE</h2>
+      <div class="flex flex-wrap gap-3 mb-12">
+        <span class="skill-pill px-4 py-2 rounded-full text-sm font-semibold text-white">WEBFLOW</span>
+        <span class="skill-pill px-4 py-2 rounded-full text-sm font-semibold text-white">HTML5</span>
+        <span class="skill-pill px-4 py-2 rounded-full text-sm font-semibold text-white">CSS3</span>
+        <span class="skill-pill px-4 py-2 rounded-full text-sm font-semibold text-white">JAVASCRIPT</span>
+        <span class="skill-pill px-4 py-2 rounded-full text-sm font-semibold text-white">REACT</span>
+        <span class="skill-pill px-4 py-2 rounded-full text-sm font-semibold text-white">SHOPIFY</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-400"></i> QUALITY ASSURANCE</h3>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>• SDLC & Agile Basics</li>
+            <li>• Manual Testing</li>
+            <li>• Test Case & Scenario Understanding</li>
+            <li>• Requirement Review</li>
+            <li>• Defect Identification</li>
+          </ul>
+        </div>
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="code-2" class="w-4 h-4 text-purple-400"></i> PROGRAMMING & MARKUP</h3>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>• HTML5</li>
+            <li>• CSS3</li>
+            <li>• JavaScript</li>
+            <li>• jQuery</li>
+            <li>• React</li>
+          </ul>
+        </div>
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="wrench" class="w-4 h-4 text-pink-400"></i> TOOLS & PLATFORMS</h3>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>• Jira</li>
+            <li>• ClickUp</li>
+            <li>• Microsoft Teams</li>
+            <li>• Git</li>
+          </ul>
+        </div>
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="bar-chart-3" class="w-4 h-4 text-indigo-400"></i> DATA & ANALYTICS</h3>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>• SQL (Basic Queries)</li>
+            <li>• Excel</li>
+            <li>• Python (pandas, basic)</li>
+          </ul>
+        </div>
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-purple-400"></i> CMS & WEBSITE BUILDERS</h3>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>• WordPress</li>
+            <li>• Webflow</li>
+            <li>• Shopify</li>
+            <li>• Wix</li>
+          </ul>
+        </div>
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="users" class="w-4 h-4 text-pink-400"></i> SOFT SKILLS</h3>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>• Attention to Detail</li>
+            <li>• Communication</li>
+            <li>• Analytical Thinking</li>
+            <li>• Time Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-24 relative overflow-hidden">
+    <div class="absolute left-0 top-0 pointer-events-none select-none"><span class="section-number">03</span></div>
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+      <p class="text-indigo-400 text-sm font-bold tracking-widest mb-2">PROFESSIONAL PATH</p>
+      <h2 class="text-4xl md:text-5xl font-black text-white mb-12">EXPERIENCE</h2>
+      <div class="relative pl-8 md:pl-0">
+        <div class="absolute left-0 top-0 bottom-0 experience-bar md:left-1/2 md:-translate-x-1/2"></div>
+
+        <!-- Item 1 -->
+        <div class="relative mb-12 md:flex md:justify-between md:items-start group">
+          <div class="hidden md:block md:w-5/12 md:text-right md:pr-8"></div>
+          <div class="absolute left-0 top-1 md:left-1/2 md:-translate-x-1/2"><div class="dot"></div></div>
+          <div class="md:w-5/12 md:pl-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
+              <h3 class="text-lg font-bold text-indigo-400">WEBFLOW DEVELOPER</h3>
+              <span class="text-xs text-slate-500 font-semibold">FEB 2024 – JUN 2024</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold mb-3">DEADON AGENCY <span class="text-slate-600 mx-1">|</span> CONTRACT <span class="text-slate-600 mx-1">|</span> REMOTE</p>
+            <ul class="space-y-2 text-sm text-slate-400">
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Developed and launched responsive websites using Webflow, focusing on performance, usability, and structured layouts.</li>
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Analyzed user interaction patterns and page behavior to improve engagement and conversion flow.</li>
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Worked with project requirements, timelines, and delivery metrics to support data-informed decisions.</li>
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Collaborated with design and marketing teams, translating requirements into measurable outcomes.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="relative mb-12 md:flex md:justify-between md:items-start group">
+          <div class="hidden md:block md:w-5/12 md:text-right md:pr-8"></div>
+          <div class="absolute left-0 top-1 md:left-1/2 md:-translate-x-1/2"><div class="dot"></div></div>
+          <div class="md:w-5/12 md:pl-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
+              <h3 class="text-lg font-bold text-indigo-400">FRONTEND DEVELOPER</h3>
+              <span class="text-xs text-slate-500 font-semibold">DEC 2023 – FEB 2024</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold mb-3">DEAL.AI <span class="text-slate-600 mx-1">|</span> CONTRACT <span class="text-slate-600 mx-1">|</span> REMOTE</p>
+            <ul class="space-y-2 text-sm text-slate-400">
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Built marketing funnel pages from scratch using HTML, CSS, and JavaScript.</li>
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Translated requirements into clean, responsive UI designs ensuring seamless performance across all screen sizes.</li>
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Conducted thorough responsiveness testing to maintain high-quality user experience.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="relative mb-12 md:flex md:justify-between md:items-start group">
+          <div class="hidden md:block md:w-5/12 md:text-right md:pr-8"></div>
+          <div class="absolute left-0 top-1 md:left-1/2 md:-translate-x-1/2"><div class="dot"></div></div>
+          <div class="md:w-5/12 md:pl-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
+              <h3 class="text-lg font-bold text-indigo-400">SOFTWARE ENGINEER / EXPERT WEBFLOW DEVELOPER</h3>
+              <span class="text-xs text-slate-500 font-semibold">NOV 2022 – DEC 2023</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold mb-3">PUNCH GROUP <span class="text-slate-600 mx-1">|</span> FULL-TIME <span class="text-slate-600 mx-1">|</span> LAHORE</p>
+            <ul class="space-y-2 text-sm text-slate-400">
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Led the development of responsive websites and web applications using Webflow, HTML, and CSS.</li>
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Incorporated Webflow interactions and custom animations for enhanced user engagement.</li>
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Collaborated with cross-functional teams to deliver high-performance web solutions.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="relative mb-12 md:flex md:justify-between md:items-start group">
+          <div class="hidden md:block md:w-5/12 md:text-right md:pr-8"></div>
+          <div class="absolute left-0 top-1 md:left-1/2 md:-translate-x-1/2"><div class="dot"></div></div>
+          <div class="md:w-5/12 md:pl-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
+              <h3 class="text-lg font-bold text-indigo-400">WEBFLOW EXPERT</h3>
+              <span class="text-xs text-slate-500 font-semibold">JUN 2021 – OCT 2022</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold mb-3">PUNCH GROUP <span class="text-slate-600 mx-1">|</span> FULL-TIME <span class="text-slate-600 mx-1">|</span> LAHORE</p>
+            <ul class="space-y-2 text-sm text-slate-400">
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Designed and developed custom websites on Webflow, managing end-to-end projects from concept to launch.</li>
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Focused on optimizing performance and ensuring scalability.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="relative mb-12 md:flex md:justify-between md:items-start group">
+          <div class="hidden md:block md:w-5/12 md:text-right md:pr-8"></div>
+          <div class="absolute left-0 top-1 md:left-1/2 md:-translate-x-1/2"><div class="dot"></div></div>
+          <div class="md:w-5/12 md:pl-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
+              <h3 class="text-lg font-bold text-indigo-400">FRONTEND DEVELOPER</h3>
+              <span class="text-xs text-slate-500 font-semibold">FEB 2021 – MAY 2021</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold mb-3">PUNCH GROUP <span class="text-slate-600 mx-1">|</span> FULL-TIME <span class="text-slate-600 mx-1">|</span> LAHORE</p>
+            <ul class="space-y-2 text-sm text-slate-400">
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Developed front-end interfaces using HTML, CSS, and Bootstrap.</li>
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Collaborated with teams to implement version control and streamline workflows.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="relative mb-12 md:flex md:justify-between md:items-start group">
+          <div class="hidden md:block md:w-5/12 md:text-right md:pr-8"></div>
+          <div class="absolute left-0 top-1 md:left-1/2 md:-translate-x-1/2"><div class="dot"></div></div>
+          <div class="md:w-5/12 md:pl-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
+              <h3 class="text-lg font-bold text-indigo-400">SHOPIFY DEVELOPER</h3>
+              <span class="text-xs text-slate-500 font-semibold">OCT 2020 – JAN 2021</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold mb-3">PUNCH GROUP <span class="text-slate-600 mx-1">|</span> FULL-TIME <span class="text-slate-600 mx-1">|</span> LAHORE</p>
+            <ul class="space-y-2 text-sm text-slate-400">
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Customized Shopify themes using HTML5, CSS, jQuery and JavaScript.</li>
+              <li class="flex gap-2"><span class="text-indigo-500">•</span> Integrated apps and tailored templates to align with client needs.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="relative md:flex md:justify-between md:items-start group">
+          <div class="hidden md:block md:w-5/12 md:text-right md:pr-8"></div>
+          <div class="absolute left-0 top-1 md:left-1/2 md:-translate-x-1/2"><div class="dot"></div></div>
+          <div class="md:w-5/12 md:pl-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
+              <h3 class="text-lg font-bold text-indigo-400">SHOPIFY DEVELOPER</h3>
+              <span class="text-xs text-slate-500 font-semibold">MAY 2020 – AUG 2020</span>
+            </div>
+            <p class="text-xs text-slate-400 font-semibold mb-3">MAS GROUP, LLC <span class="text-slate-600 mx-1">|</span> FULL-TIME <span class="text-slate-600 mx-1">|</span> WEST HOLLYWOOD, CA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24 relative overflow-hidden">
+    <div class="absolute right-0 top-0 pointer-events-none select-none"><span class="section-number">04</span></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <p class="text-indigo-400 text-sm font-bold tracking-widest mb-2 text-center">FEATURED WORK</p>
+      <h2 class="text-4xl md:text-5xl font-black text-white mb-12 text-center">KEY PROJECTS</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="glass-card p-8 rounded-2xl card-hover">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center mb-6"><i data-lucide="layers" class="w-6 h-6 text-indigo-400"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">THE HIGHEST OF STAKES</h3>
+          <p class="text-xs text-slate-500 font-semibold mb-4">CLIENT: <span class="text-indigo-400">PUNCH GROUP</span></p>
+          <p class="text-sm text-slate-400 mb-6">Developed Webflow layouts and integrated CMS, also reviewing functionality for UI consistency, responsiveness, and performance to ensure a high-quality user experience.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag px-3 py-1 rounded text-xs font-semibold">WEBFLOW</span>
+            <span class="tag px-3 py-1 rounded text-xs font-semibold">CMS</span>
+            <span class="tag px-3 py-1 rounded text-xs font-semibold">UI/UX REVIEW</span>
+            <span class="tag px-3 py-1 rounded text-xs font-semibold">PERFORMANCE TESTING</span>
+          </div>
+        </div>
+        <div class="glass-card p-8 rounded-2xl card-hover">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mb-6"><i data-lucide="search" class="w-6 h-6 text-purple-400"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">DRESSBARN</h3>
+          <p class="text-xs text-slate-500 font-semibold mb-4">CLIENT: <span class="text-purple-400">RAINFLASH</span></p>
+          <p class="text-sm text-slate-400 mb-6">Responsible for developing Shopify pages and customizations for UI/UX consistency, responsiveness, and functionality, identifying issues to ensure a smooth and high-quality user experience.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag px-3 py-1 rounded text-xs font-semibold">SHOPIFY</span>
+            <span class="tag px-3 py-1 rounded text-xs font-semibold">CUSTOMIZATION</span>
+            <span class="tag px-3 py-1 rounded text-xs font-semibold">QA</span>
+            <span class="tag px-3 py-1 rounded text-xs font-semibold">DEFECT IDENTIFICATION</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-24 relative overflow-hidden">
+    <div class="absolute left-0 top-0 pointer-events-none select-none"><span class="section-number">05</span></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <p class="text-indigo-400 text-sm font-bold tracking-widest mb-2">ACADEMIC BACKGROUND</p>
+      <h2 class="text-4xl md:text-5xl font-black text-white mb-10">EDUCATION</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div class="glass-card p-6 rounded-xl card-hover">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-indigo-500/20 flex items-center justify-center shrink-0"><i data-lucide="graduation-cap" class="w-5 h-5 text-indigo-400"></i></div>
+            <div>
+              <h3 class="font-bold text-white text-sm leading-tight mb-1">MSC INFORMATION TECHNOLOGY WITH PROJECT MANAGEMENT</h3>
+              <p class="text-xs text-indigo-400 font-semibold mb-2">UNIVERSITY OF THE WEST OF SCOTLAND</p>
+              <div class="flex items-center gap-3 text-xs text-slate-500">
+                <span>JAN 2024 – FEB 2025</span>
+                <span class="text-slate-600">|</span>
+                <span>LONDON, UK</span>
+                <span class="tag px-2 py-0.5 rounded text-[10px]">GPA 3.4</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card p-6 rounded-xl card-hover">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0"><i data-lucide="graduation-cap" class="w-5 h-5 text-purple-400"></i></div>
+            <div>
+              <h3 class="font-bold text-white text-sm leading-tight mb-1">BSC COMPUTER SCIENCE</h3>
+              <p class="text-xs text-purple-400 font-semibold mb-2">UNIVERSITY OF LAHORE</p>
+              <div class="flex items-center gap-3 text-xs text-slate-500">
+                <span>FEB 2016 – JAN 2021</span>
+                <span class="text-slate-600">|</span>
+                <span>LAHORE, PAKISTAN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-indigo-400 text-sm font-bold tracking-widest mb-2">CONTINUED LEARNING</p>
+      <h2 class="text-4xl md:text-5xl font-black text-white mb-10">CERTIFICATIONS</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="glass-card p-5 rounded-xl card-hover">
+          <div class="w-8 h-8 rounded bg-indigo-500/20 flex items-center justify-center mb-3"><i data-lucide="award" class="w-4 h-4 text-indigo-400"></i></div>
+          <h4 class="font-bold text-white text-sm mb-1">Fundamentals of Quality Assurance</h4>
+          <p class="text-xs text-slate-500">ALISON</p>
+        </div>
+        <div class="glass-card p-5 rounded-xl card-hover">
+          <div class="w-8 h-8 rounded bg-purple-500/20 flex items-center justify-center mb-3"><i data-lucide="award" class="w-4 h-4 text-purple-400"></i></div>
+          <h4 class="font-bold text-white text-sm mb-1">QA Techniques and Methodologies</h4>
+          <p class="text-xs text-slate-500">ALISON</p>
+        </div>
+        <div class="glass-card p-5 rounded-xl card-hover">
+          <div class="w-8 h-8 rounded bg-pink-500/20 flex items-center justify-center mb-3"><i data-lucide="award" class="w-4 h-4 text-pink-400"></i></div>
+          <h4 class="font-bold text-white text-sm mb-1">Programming Foundations: Software Testing</h4>
+          <p class="text-xs text-slate-500">LINKEDIN</p>
+        </div>
+        <div class="glass-card p-5 rounded-xl card-hover">
+          <div class="w-8 h-8 rounded bg-indigo-500/20 flex items-center justify-center mb-3"><i data-lucide="award" class="w-4 h-4 text-indigo-400"></i></div>
+          <h4 class="font-bold text-white text-sm mb-1">Foundations of Project Management</h4>
+          <p class="text-xs text-slate-500">TCS + THE EDUCATION GROUP</p>
+        </div>
+        <div class="glass-card p-5 rounded-xl card-hover">
+          <div class="w-8 h-8 rounded bg-purple-500/20 flex items-center justify-center mb-3"><i data-lucide="award" class="w-4 h-4 text-purple-400"></i></div>
+          <h4 class="font-bold text-white text-sm mb-1">Basics of Web Development & Coding</h4>
+          <p class="text-xs text-slate-500">COURSERA</p>
+        </div>
+        <div class="glass-card p-5 rounded-xl card-hover">
+          <div class="w-8 h-8 rounded bg-pink-500/20 flex items-center justify-center mb-3"><i data-lucide="award" class="w-4 h-4 text-pink-400"></i></div>
+          <h4 class="font-bold text-white text-sm mb-1">Frontend Fundamentals</h4>
+          <p class="text-xs text-slate-500">COURSERA</p>
+        </div>
+        <div class="glass-card p-5 rounded-xl card-hover sm:col-span-2 lg:col-span-2">
+          <div class="w-8 h-8 rounded bg-indigo-500/20 flex items-center justify-center mb-3"><i data-lucide="award" class="w-4 h-4 text-indigo-400"></i></div>
+          <h4 class="font-bold text-white text-sm mb-1">JavaScript Basics</h4>
+          <p class="text-xs text-slate-500">UNIVERSITY OF CALIFORNIA, DAVIS + PIRPLE</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizations -->
+  <section class="py-24 relative overflow-hidden">
+    <div class="absolute right-0 top-0 pointer-events-none select-none"><span class="section-number">06</span></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <p class="text-indigo-400 text-sm font-bold tracking-widest mb-2 text-right">BEYOND THE SCREEN</p>
+      <h2 class="text-4xl md:text-5xl font-black text-white mb-12 text-right">ORGANIZATIONS</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass-card p-6 rounded-xl card-hover">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-indigo-500/20 flex items-center justify-center shrink-0"><i data-lucide="building-2" class="w-5 h-5 text-indigo-400"></i></div>
+            <div>
+              <p class="text-xs text-slate-500 font-semibold mb-1">FEB 2024 – PRESENT</p>
+              <h3 class="font-bold text-white text-sm leading-tight mb-2">SCHOOL OFFICER — COMPUTER ENGINEERING & PHYSICAL SCIENCES (CEPS)</h3>
+              <p class="text-xs text-slate-400">Representing students in the School of Computing Engineering and Physical Sciences at the University of the West of Scotland. Acting as liaison between students and faculty, responsible for managing events and workshops.</p>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card p-6 rounded-xl card-hover">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0"><i data-lucide="heart-handshake" class="w-5 h-5 text-purple-400"></i></div>
+            <div>
+              <p class="text-xs text-slate-500 font-semibold mb-1">JAN 2018 – JAN 2019</p>
+              <h3 class="font-bold text-white text-sm leading-tight mb-2">VOLUNTEER — BLOOD DONATION SOCIETY</h3>
+              <p class="text-xs text-slate-400">Coordinated donors and hospitals to ensure timely blood availability. Supported logistics for multiple blood donation drives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 relative">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="text-indigo-400 text-sm font-bold tracking-widest mb-2">END OF THE LINE</p>
+      <h2 class="text-4xl md:text-6xl font-black text-white mb-4">LET'S <span class="text-gradient">CONNECT.</span></h2>
+      <p class="text-slate-400 text-sm max-w-xl mx-auto mb-12">Whether you have a role in mind, a project to test, or just want to talk quality — I'm always open to a good conversation.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+        <div class="glass-card p-5 rounded-xl card-hover">
+          <div class="w-8 h-8 rounded bg-indigo-500/20 flex items-center justify-center mx-auto mb-3"><i data-lucide="mail" class="w-4 h-4 text-indigo-400"></i></div>
+          <p class="text-xs text-slate-500 font-semibold mb-1">EMAIL</p>
+          <a href="mailto:ahmadahsan955@gmail.com" class="text-sm text-white font-semibold hover:text-indigo-400 transition-colors">ahmadahsan955@gmail.com</a>
+        </div>
+        <div class="glass-card p-5 rounded-xl card-hover">
+          <div class="w-8 h-8 rounded bg-purple-500/20 flex items-center justify-center mx-auto mb-3"><i data-lucide="phone" class="w-4 h-4 text-purple-400"></i></div>
+          <p class="text-xs text-slate-500 font-semibold mb-1">PHONE (PK)</p>
+          <a href="tel:+923044044496" class="text-sm text-white font-semibold hover:text-purple-400 transition-colors">+92 304 4044496</a>
+        </div>
+        <div class="glass-card p-5 rounded-xl card-hover">
+          <div class="w-8 h-8 rounded bg-pink-500/20 flex items-center justify-center mx-auto mb-3"><i data-lucide="phone" class="w-4 h-4 text-pink-400"></i></div>
+          <p class="text-xs text-slate-500 font-semibold mb-1">PHONE (UK)</p>
+          <a href="tel:+447348893954" class="text-sm text-white font-semibold hover:text-pink-400 transition-colors">+44 7348 893954</a>
+        </div>
+        <div class="glass-card p-5 rounded-xl card-hover">
+          <div class="w-8 h-8 rounded bg-indigo-500/20 flex items-center justify-center mx-auto mb-3"><i data-lucide="map-pin" class="w-4 h-4 text-indigo-400"></i></div>
+          <p class="text-xs text-slate-500 font-semibold mb-1">LOCATION</p>
+          <p class="text-sm text-white font-semibold">Lahore, Pakistan</p>
+        </div>
+        <div class="glass-card p-5 rounded-xl card-hover">
+          <div class="w-8 h-8 rounded bg-purple-500/20 flex items-center justify-center mx-auto mb-3"><i data-lucide="linkedin" class="w-4 h-4 text-purple-400"></i></div>
+          <p class="text-xs text-slate-500 font-semibold mb-1">LINKEDIN</p>
+          <a href="#" class="text-sm text-white font-semibold hover:text-purple-400 transition-colors">linkedin.com/in/muhammadahmad</a>
+        </div>
+        <div class="glass-card p-5 rounded-xl card-hover">
+          <div class="w-8 h-8 rounded bg-pink-500/20 flex items-center justify-center mx-auto mb-3"><i data-lucide="globe" class="w-4 h-4 text-pink-400"></i></div>
+          <p class="text-xs text-slate-500 font-semibold mb-1">WEBSITE</p>
+          <a href="#" class="text-sm text-white font-semibold hover:text-pink-400 transition-colors">muhammadahmad.info</a>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="mailto:ahmadahsan955@gmail.com" class="btn-primary px-8 py-3 rounded font-bold text-white flex items-center gap-2">SEND A MESSAGE <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        <a href="#" class="px-8 py-3 rounded font-bold text-white border border-white/20 hover:bg-white/5 transition-colors flex items-center gap-2"><i data-lucide="linkedin" class="w-4 h-4"></i> VIEW LINKEDIN</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-slate-500">© 2026 Muhammad Ahmad. Crafted with precision.</p>
+      <div class="flex items-center gap-6">
+        <a href="#" class="text-slate-500 hover:text-white transition-colors"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+        <a href="#" class="text-slate-500 hover:text-white transition-colors"><i data-lucide="github" class="w-4 h-4"></i></a>
+        <a href="#" class="text-slate-500 hover:text-white transition-colors"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
