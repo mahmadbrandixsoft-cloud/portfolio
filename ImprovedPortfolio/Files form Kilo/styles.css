@@ -1,0 +1,218 @@
+/* 
+ * ===================================================================
+ * STYLES.CSS - Portfolio Website Styles
+ * ===================================================================
+ * Custom styles for the improved portfolio
+ */
+
+/* ========================================
+   GOOGLE MATERIAL SYMBOLS
+   ======================================== */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+body {
+    background-color: #0e0e0f;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* ========================================
+   TEXT GLOW EFFECT
+   ======================================== */
+.text-glow {
+    text-shadow: 0 0 20px rgba(143, 245, 255, 0.4);
+}
+
+/* ========================================
+   GLASS CARD EFFECT
+   ======================================== */
+.glass-card {
+    background: rgba(32, 31, 33, 0.6);
+    backdrop-filter: blur(20px);
+}
+
+/* ========================================
+   MARQUEE ANIMATION
+   ======================================== */
+.marquee {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 3rem;
+}
+
+.marquee-content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    min-width: 100%;
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+/* ========================================
+   CARD HOVER EFFECT (CYAN)
+   ======================================== */
+.card-hover-cyan {
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.card-hover-cyan:hover {
+    border-color: #00dcfc;
+    box-shadow: 0 0 20px rgba(0, 220, 252, 0.1);
+}
+
+.card-hover-cyan:hover .material-symbols-outlined {
+    transform: scale(1.1);
+    color: #00dcfc;
+}
+
+/* ========================================
+   RESPONSIVE MOBILE BASE FIXES
+   ======================================== */
+@media (max-width: 768px) {
+    /* Section padding reset */
+    section {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    /* Header/Nav padding */
+    header, nav {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    /* Full width container fix */
+    .max-w-7xl {
+        max-width: 100% !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Fix grids on mobile */
+    .grid-cols-1.md\:grid-cols-12 {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .md\:col-span-8,
+    .md\:col-span-4 {
+        grid-column: span 1 / span 1 !important;
+    }
+}
+
+/* ========================================
+   TABLET RESPONSIVE
+   ======================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust for tablets */
+    .font-headline.text-6xl {
+        font-size: 3rem !important;
+    }
+    
+    .font-headline.text-8xl {
+        font-size: 5rem !important;
+    }
+}
+
+/* ========================================
+   MOBILE PHONE (SMALL) RESPONSIVE
+   ======================================== */
+@media (max-width: 480px) {
+    /* Extra small screens */
+    h1 {
+        font-size: 2rem !important;
+    }
+    
+    .font-headline.text-5xl {
+        font-size: 1.75rem !important;
+    }
+    
+    .font-headline.text-4xl {
+        font-size: 1.5rem !important;
+    }
+    
+    .font-body {
+        font-size: 0.875rem !important;
+    }
+    
+    /* Smaller padding */
+    .p-8 {
+        padding: 1rem !important;
+    }
+    
+    .p-6 {
+        padding: 0.75rem !important;
+    }
+    
+    /* Contact cards stack */
+    .grid-cols-1.md\:grid-cols-3 {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ========================================
+   SCROLLBAR STYLING
+   ======================================== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0e0e0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #484849;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #767576;
+}
+
+/* ========================================
+   SELECTION COLOR
+   ======================================== */
+::selection {
+    background: rgba(143, 245, 255, 0.3);
+    color: #ffffff;
+}
+
+/* ========================================
+   FOCUS STATES FOR ACCESSIBILITY
+   ======================================== */
+a:focus,
+button:focus {
+    outline: 2px solid #8ff5ff;
+    outline-offset: 2px;
+}
+
+/* ========================================
+   REDUCE MOTION FOR ACCESSIBILITY
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    .marquee-content {
+        animation: none;
+    }
+    
+    * {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}

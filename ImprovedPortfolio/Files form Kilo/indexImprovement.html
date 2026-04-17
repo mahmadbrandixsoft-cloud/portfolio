@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Muhammad Ahmad - Webflow Developer & QA Engineer specializing in building and testing high-performance websites."/>
+    <meta name="theme-color" content="#0e0e0f"/>
+    <meta property="og:title" content="Muhammad Ahmad | Webflow Developer & QA Engineer"/>
+    <meta property="og:description" content="Building, testing, and delivering high-performance websites - end to end."/>
+    <meta property="og:type" content="website"/>
+    <link rel="canonical" href="https://muhammadahmad.info"/>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"/>
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind Config -->
+    <script src="tailwind-config.js"></script>
+</head>
+<body class="selection:bg-primary selection:text-on-primary-container">
+<!-- 
+    ============================================================================
+    TOP NAVIGATION
+    Fixed position navbar with blur effect.
+    ============================================================================
+-->
+<nav class="fixed top-0 w-full z-50 bg-zinc-950/60 backdrop-blur-xl flex justify-between items-center px-4 md:px-8 py-3 md:py-4 max-w-full mx-auto">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-primary focus:text-zinc-950 focus:px-4 focus:py-2 focus:z-50 focus:rounded">Skip to main content</a>
+    <!-- Brand Logo -->
+    <div class="text-sm md:text-lg font-bold tracking-tighter text-cyan-400 font-headline uppercase">MUHAMMAD AHMAD</div>
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="md:hidden text-zinc-400 hover:text-zinc-100 p-2" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+    <!-- Navigation Links -->
+    <div id="mobile-menu" class="hidden md:flex md:gap-8 absolute md:relative top-full md:top-auto left-0 md:left-auto w-full md:w-auto bg-zinc-950/95 md:bg-transparent flex-col md:flex-row p-4 md:p-0 mx-auto">
+        <a class="text-zinc-400 font-medium hover:text-zinc-100 transition-colors font-headline uppercase text-xs tracking-widest" href="#about">About</a>
+        <a class="text-zinc-400 font-medium hover:text-zinc-100 transition-colors font-headline uppercase text-xs tracking-widest" href="#skills">Skills</a>
+        <a class="text-zinc-400 font-medium hover:text-zinc-100 transition-colors font-headline uppercase text-xs tracking-widest" href="#experience">Experience</a>
+        <a class="text-zinc-400 font-medium hover:text-zinc-100 transition-colors font-headline uppercase text-xs tracking-widest" href="#projects">Projects</a>
+        <a class="text-zinc-400 font-medium hover:text-zinc-100 transition-colors font-headline uppercase text-xs tracking-widest" href="#education">Education</a>
+    </div>
+    <!-- CTA Button (hidden on mobile, shown in connect section instead) -->
+    <button class="hidden md:block bg-primary text-on-primary-container px-4 md:px-6 py-2 font-headline font-bold uppercase text-xs tracking-widest hover:scale-95 transition-all duration-300" aria-label="Go to contact section">Let's Connect</button>
+</nav>
+
+<!-- 
+    ============================================================================
+    HERO SECTION
+    ============================================================================
+-->
+<header class="relative min-h-screen flex flex-col items-center justify-center pt-20 md:pt-24 px-4 md:px-8 overflow-hidden bg-transparent">
+    <!-- Background gradient orbs -->
+    <div class="absolute top-[-20%] left-[-30%] md:left-[-10%] w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-primary/10 rounded-full blur-[80px] md:blur-[120px]"></div>
+    <div class="absolute bottom-[-20%] right-[-30%] md:right-[-10%] w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-tertiary/10 rounded-full blur-[80px] md:blur-[120px]"></div>
+    
+    <!-- Hero Content -->
+    <div class="relative z-10 text-center max-w-7xl mx-auto px-2 md:px-4">
+        <span class="font-label text-xs tracking-[0.4em] text-primary uppercase mb-4 md:mb-6 block">Webflow Developer • QA Engineer</span>
+        <h1 class="font-headline text-3xl md:text-5xl lg:text-8xl font-bold leading-[0.9] tracking-tighter uppercase mb-6 md:mb-12">
+            <span class="block">I BUILD, TEST,</span>
+            <span class="block">& DELIVER</span>
+            <span class="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent text-glow">HIGH-PERFORMANCE</span>
+            <span class="block">WEBSITES.</span>
+        </h1>
+        <!-- CTA Buttons -->
+        <div class="flex flex-col md:flex-row gap-3 md:gap-6 justify-center items-center mt-4 md:mt-8 w-full px-2 md:px-4">
+            <button class="group relative px-6 md:px-10 py-3 md:py-5 w-full md:w-auto bg-primary text-on-primary font-headline font-extrabold uppercase tracking-widest overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(143,245,255,0.3)]">
+                <span class="relative z-10">VIEW MY WORK</span>
+            </button>
+            <button class="px-6 md:px-10 py-3 md:py-5 w-full md:w-auto border-2 border-outline-variant text-on-surface font-headline font-extrabold uppercase tracking-widest hover:bg-white/5 transition-all duration-300">
+                CONTACT ME
+            </button>
+        </div>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 md:gap-4 opacity-50">
+        <span class="font-label text-[10px] tracking-widest uppercase">Scroll</span>
+        <div class="w-[1px] h-8 md:h-12 bg-gradient-to-b from-primary to-transparent"></div>
+    </div>
+</header>
+
+<main id="main">
+<!-- 
+    ============================================================================
+    ABOUT SECTION
+    ============================================================================
+-->
+<section class="py-16 md:py-40 px-4 md:px-8 bg-transparent" id="about">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-start">
+            <!-- Left Column -->
+            <div class="lg:col-span-5 relative">
+                <!-- Large number - hidden on mobile for cleaner look -->
+                <span class="hidden md:block font-headline text-8xl font-black text-white/5 absolute -top-12 -left-4">01</span>
+                <h2 class="font-headline text-3xl md:text-5xl lg:text-6xl font-bold leading-tight uppercase mb-4 md:mb-8">
+                    BRIDGING <span class="text-primary">BUILDING</span> &amp; <span class="text-tertiary">BREAKING</span>.
+                </h2>
+                <p class="font-body text-base md:text-xl text-on-surface-variant leading-relaxed mb-6 md:mb-12">
+                    Precision is not an accident. As a developer who doubles as a QA Engineer, I architect resilient systems that withstand scale and user unpredictability.
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-10 md:w-12 h-10 md:h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary">verified</span>
+                    </div>
+                    <span class="font-label text-xs md:text-sm uppercase tracking-widest font-bold">All Systems Functional</span>
+                </div>
+            </div>
+            <!-- Right Column - Skills Grid -->
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+                <div class="p-4 md:p-8 bg-surface-container-high card-hover-cyan flex flex-col gap-3 md:gap-6">
+                    <span class="material-symbols-outlined text-3xl md:text-4xl text-primary transition-all duration-300" data-weight="fill">verified_user</span>
+                    <h3 class="font-headline text-xl md:text-2xl font-bold uppercase">Quality Assurance</h3>
+                    <p class="font-body text-sm md:text-base text-on-surface-variant">Automated and manual testing pipelines ensuring zero-defect deployments.</p>
+                </div>
+                <div class="p-4 md:p-8 bg-surface-container-high card-hover-cyan flex flex-col gap-3 md:gap-6">
+                    <span class="material-symbols-outlined text-3xl md:text-4xl text-secondary transition-all duration-300" data-weight="fill">terminal</span>
+                    <h3 class="font-headline text-xl md:text-2xl font-bold uppercase">Frontend Craft</h3>
+                    <p class="font-body text-sm md:text-base text-on-surface-variant">High-performance Webflow development with React integrations.</p>
+                </div>
+                <div class="p-4 md:p-8 bg-surface-container-high card-hover-cyan flex flex-col gap-3 md:gap-6">
+                    <span class="material-symbols-outlined text-3xl md:text-4xl text-tertiary transition-all duration-300" data-weight="fill">bug_report</span>
+                    <h3 class="font-headline text-xl md:text-2xl font-bold uppercase">Defect Tracking</h3>
+                    <p class="font-body text-sm md:text-base text-on-surface-variant">Systematic identification and management of technical debt.</p>
+                </div>
+                <div class="p-4 md:p-8 bg-surface-container-high card-hover-cyan flex flex-col gap-3 md:gap-6">
+                    <span class="material-symbols-outlined text-3xl md:text-4xl text-on-surface transition-all duration-300" data-weight="fill">account_tree</span>
+                    <h3 class="font-headline text-xl md:text-2xl font-bold uppercase">Project Delivery</h3>
+                    <p class="font-body text-sm md:text-base text-on-surface-variant">Agile management focusing on velocity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+    ============================================================================
+    SKILLS MARQUEE SECTION (100% WIDTH)
+    ============================================================================
+-->
+<section class="py-12 md:py-20 border-y border-outline-variant/15 overflow-hidden" id="skills">
+    <div class="w-full max-w-full relative">
+        <!-- Large number -->
+        <span class="hidden md:block font-headline text-8xl font-black text-white/5 absolute -top-12 -left-4">02</span>
+        <div class="marquee font-headline text-3xl md:text-5xl lg:text-6xl font-bold uppercase text-white/10 tracking-tighter">
+            <div class="marquee-content">
+                <span>Webflow</span>
+                <span class="text-primary">HTML5</span>
+                <span>CSS3</span>
+                <span class="text-secondary">Javascript</span>
+                <span>React</span>
+                <span class="text-tertiary">Shopify</span>
+                <span>QA Automation</span>
+                <span class="text-primary">Jira</span>
+                <span>Selenium</span>
+            </div>
+            <div class="marquee-content">
+                <span>Webflow</span>
+                <span class="text-primary">HTML5</span>
+                <span>CSS3</span>
+                <span class="text-secondary">Javascript</span>
+                <span>React</span>
+                <span class="text-tertiary">Shopify</span>
+                <span>QA Automation</span>
+                <span class="text-primary">Jira</span>
+                <span>Selenium</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+    ============================================================================
+    EXPERIENCE SECTION
+    ============================================================================
+-->
+<section class="py-16 md:py-40 px-4 md:px-8 bg-transparent" id="experience">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-12 md:mb-24 relative">
+            <span class="hidden md:block font-headline text-8xl font-black text-white/5 absolute -mt-12 -ml-4">03</span>
+            <span class="font-label text-xs tracking-[0.4em] text-primary uppercase mb-2 md:mb-4 block">Professional Journey</span>
+            <h2 class="font-headline text-3xl md:text-5xl font-bold uppercase tracking-tighter">Engineering Tenure</h2>
+        </div>
+        <!-- Timeline -->
+        <div class="space-y-16 md:space-y-32 relative">
+            <div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-outline-variant/20 hidden md:block"></div>
+            <!-- Role 1 -->
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 group">
+                <div class="md:text-right flex flex-col justify-center">
+                    <span class="font-label text-primary text-sm font-bold tracking-widest mb-1 md:mb-2">2023 — PRESENT</span>
+                    <h3 class="font-headline text-2xl md:text-3xl font-bold uppercase">Season Agency</h3>
+                    <p class="font-body text-on-surface-variant italic">Senior Webflow Developer &amp; QA Lead</p>
+                </div>
+                <div class="absolute left-[-6px] md:left-1/2 md:-ml-2 top-0 md:top-1/2 w-3 md:w-4 h-3 md:h-4 rounded-full bg-primary ring-4 md:ring-8 ring-primary/10 transition-transform group-hover:scale-150"></div>
+                <div class="bg-surface-container-low p-4 md:p-8 border-l-2 md:border-l-2 border-primary card-hover-cyan">
+                    <p class="font-body text-sm md:text-base text-on-surface-variant leading-relaxed">Orchestrating high-end Webflow builds for international fashion brands. Implementing rigorous QA protocols reducing post-launch defects by 40%.</p>
+                </div>
+            </div>
+            <!-- Role 2 -->
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 group">
+                <div class="md:order-2 text-left flex flex-col justify-center">
+                    <span class="font-label text-secondary text-sm font-bold tracking-widest mb-1 md:mb-2">2022 — 2023</span>
+                    <h3 class="font-headline text-2xl md:text-3xl font-bold uppercase">Zeal AI</h3>
+                    <p class="font-body text-on-surface-variant italic">Full-stack Developer</p>
+                </div>
+                <div class="absolute left-[-6px] md:left-1/2 md:-ml-2 top-0 md:top-1/2 w-3 md:w-4 h-3 md:h-4 rounded-full bg-secondary ring-4 md:ring-8 ring-secondary/10 transition-transform group-hover:scale-150"></div>
+                <div class="md:order-1 bg-surface-container-low p-4 md:p-8 border-r-2 border-secondary md:text-right card-hover-cyan">
+                    <p class="font-body text-sm md:text-base text-on-surface-variant leading-relaxed">Engineered scalable dashboard interfaces for AI-driven logistics tracking.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+    ============================================================================
+    PROJECTS SECTION
+    ============================================================================
+-->
+<section class="py-16 md:py-40 px-4 md:px-8 bg-transparent" id="projects">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-24 gap-4 md:gap-8">
+            <div class="max-w-2xl relative">
+                <span class="hidden md:block font-headline text-8xl font-black text-white/5 absolute -mt-12 -ml-4">04</span>
+                <h2 class="font-headline text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-4 md:mb-6">SELECTED<br/>ARTIFACTS</h2>
+                <p class="font-body text-base md:text-xl text-on-surface-variant">A collection of systems engineered for performance.</p>
+            </div>
+            <div class="flex gap-4">
+                <div class="px-4 md:px-6 py-2 md:py-3 bg-surface-container-high font-label text-xs uppercase tracking-widest border border-transparent hover:border-cyan-400 transition-colors">48+ Projects</div>
+            </div>
+        </div>
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
+            <!-- Large Project Card -->
+            <div class="md:col-span-8 group relative aspect-[16/10] bg-surface-container-high overflow-hidden border border-transparent hover:border-cyan-400 transition-all duration-300">
+                <img alt="The Highest of Stakes Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkVsev4IsWJ_uIyQPDQRtDvE2-2NPtrV0nbkXiy9l_R2NeUSt1lJi4iWJ5UfWVZMvQ2L1az6mStBm-czz_MicsJu-1eIKVApujW1zECiOI0iS_HTkvkA0hP5oraM5guupvrmXEJGcaSDIBTnfYYsRFA5fSNz6FZBDGDPBK3USUNjeFzVZC8_UfLbdrk_EbztT9xqbEssiA9JnnCNvvpEKKcJ3mhLplAomBxrLcIkBHJCCxczIj5rRae6-vmKVtafR4Dm6Xhupf0xdV" loading="lazy" decoding="async"/>
+                <div class="absolute inset-0 p-4 md:p-12 flex flex-col justify-end bg-gradient-to-t from-surface-container-lowest to-transparent">
+                    <span class="font-label text-primary text-xs uppercase tracking-widest mb-2 md:mb-4">Webflow / GSAP / JS</span>
+                    <h3 class="font-headline text-2xl md:text-4xl font-bold uppercase mb-2 md:mb-4">The Highest of Stakes</h3>
+                    <p class="font-body text-sm md:text-base text-on-surface-variant max-w-lg mb-4 md:mb-8">Full-scale digital identity for high-risk investment documentary.</p>
+                    <button class="w-fit font-label text-sm uppercase tracking-widest flex items-center gap-2 group/btn">
+                        Explore <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-2">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Small Project Card -->
+            <div class="md:col-span-4 group relative bg-surface-container-high overflow-hidden flex flex-col border border-transparent hover:border-cyan-400 transition-all duration-300">
+                <div class="h-1/2 overflow-hidden">
+                    <img alt="Dressbarn Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtkGmz6xxAMoPp-S3sfXYSsOzzkkLwudRKaokydVB9cH4XLNMyLrW1nIUK4gK4AKkZD-cNBKyMhb_UXQ722tprDREQKZwewwSzbuvu25Lgvvf-_ve-Mj2gzzCtcOyP2CJAUfM7AjEbK9nbSHb-d4Sd9wnrjKde6NxNE7PCoK3B6ORRr13l1pJa45WxMQ4VZAIlc4wsME5Bg2rn6uWTvbDWP8GKy8hbV22M3R7vZGJXvEGJJi3AWsdoUSw_lD_INuTwrHwfW_lB9p-D" loading="lazy" decoding="async"/>
+                </div>
+                <div class="p-4 md:p-8 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="font-label text-secondary text-xs uppercase tracking-widest mb-2 block">Shopify / QA</span>
+                        <h3 class="font-headline text-xl md:text-2xl font-bold uppercase mb-2">Dressbarn</h3>
+                        <p class="font-body text-sm text-on-surface-variant">CRO and technical SEO audit.</p>
+                    </div>
+                    <button class="mt-4 md:mt-6 text-primary material-symbols-outlined self-end transition-transform group-hover:scale-125 group-hover:text-cyan-400">open_in_new</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+    ============================================================================
+    EDUCATION SECTION
+    ============================================================================
+-->
+<section class="py-16 md:py-40 px-4 md:px-8 bg-transparent relative" id="education">
+    <div class="max-w-7xl mx-auto">
+        <span class="hidden md:block font-headline text-8xl font-black text-white/5 absolute -mt-12 -ml-4">05</span>
+        <div class="mb-12 md:mb-20 relative">
+            <span class="font-label text-xs tracking-[0.4em] text-primary uppercase mb-2 md:mb-4 block">Academic Background</span>
+            <h2 class="font-headline text-4xl md:text-6xl font-bold uppercase tracking-tighter">Education</h2>
+        </div>
+        <!-- Education Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+            <div class="p-4 md:p-8 bg-surface-container-low border-l-4 border-primary group hover:bg-surface-container-high card-hover-cyan transition-all">
+                <div class="flex items-start justify-between mb-3 md:mb-4">
+                    <span class="material-symbols-outlined text-3xl md:text-4xl text-primary transition-all duration-300">school</span>
+                    <span class="font-label text-[10px] uppercase tracking-widest text-zinc-500">2020 — 2022</span>
+                </div>
+                <h3 class="font-headline text-xl md:text-2xl font-bold uppercase mb-1">MSc IT</h3>
+                <p class="font-body text-sm md:text-base text-on-surface-variant mb-2 md:mb-4">COMSATS University | Pakistan</p>
+                <span class="font-label text-xs bg-primary/10 text-primary px-2 md:px-3 py-1 rounded-full">Distinction</span>
+            </div>
+            <div class="p-4 md:p-8 bg-surface-container-low border-l-4 border-outline-variant group hover:bg-surface-container-high card-hover-cyan transition-all">
+                <div class="flex items-start justify-between mb-3 md:mb-4">
+                    <span class="material-symbols-outlined text-3xl md:text-4xl text-on-surface-variant transition-all duration-300">history_edu</span>
+                    <span class="font-label text-[10px] uppercase tracking-widest text-zinc-500">2016 — 2020</span>
+                </div>
+                <h3 class="font-headline text-xl md:text-2xl font-bold uppercase mb-1">BSc Computer Science</h3>
+                <p class="font-body text-sm md:text-base text-on-surface-variant">Islamia University | Pakistan</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+    ============================================================================
+    CERTIFICATIONS SECTION
+    ============================================================================
+-->
+<section class="py-16 md:py-40 px-4 md:px-8 bg-transparent relative" id="certifications">
+    <div class="max-w-7xl mx-auto">
+        <span class="hidden md:block font-headline text-8xl font-black text-white/5 absolute -mt-12 -ml-4">06</span>
+        <div class="mb-12 md:mb-20 relative">
+            <span class="font-label text-xs tracking-[0.4em] text-secondary uppercase mb-2 md:mb-4 block">Verified Expertise</span>
+            <h2 class="font-headline text-4xl md:text-6xl font-bold uppercase tracking-tighter">Certifications</h2>
+        </div>
+        <!-- Certifications Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
+            <div class="p-3 md:p-6 bg-surface-container-high card-hover-cyan flex flex-col items-center justify-center text-center gap-2 md:gap-3">
+                <span class="material-symbols-outlined text-2xl md:text-3xl text-primary transition-all duration-300">verified</span>
+                <span class="font-label text-[10px] uppercase tracking-widest leading-tight">Webflow Certified</span>
+            </div>
+            <div class="p-3 md:p-6 bg-surface-container-high card-hover-cyan flex flex-col items-center justify-center text-center gap-2 md:gap-3">
+                <span class="material-symbols-outlined text-2xl md:text-3xl text-secondary transition-all duration-300">terminal</span>
+                <span class="font-label text-[10px] uppercase tracking-widest leading-tight">ISTQB</span>
+            </div>
+            <div class="p-3 md:p-6 bg-surface-container-high card-hover-cyan flex flex-col items-center justify-center text-center gap-2 md:gap-3">
+                <span class="material-symbols-outlined text-2xl md:text-3xl text-tertiary transition-all duration-300">dashboard</span>
+                <span class="font-label text-[10px] uppercase tracking-widest leading-tight">Google PM</span>
+            </div>
+            <div class="p-3 md:p-6 bg-surface-container-high card-hover-cyan flex flex-col items-center justify-center text-center gap-2 md:gap-3">
+                <span class="material-symbols-outlined text-2xl md:text-3xl text-zinc-400 transition-all duration-300">monitoring</span>
+                <span class="font-label text-[10px] uppercase tracking-widest leading-tight">Technical SEO</span>
+            </div>
+            <div class="p-3 md:p-6 bg-surface-container-high card-hover-cyan flex flex-col items-center justify-center text-center gap-2 md:gap-3">
+                <span class="material-symbols-outlined text-2xl md:text-3xl text-zinc-400 transition-all duration-300">code</span>
+                <span class="font-label text-[10px] uppercase tracking-widest leading-tight">React Perf</span>
+            </div>
+            <div class="p-3 md:p-6 bg-surface-container-high card-hover-cyan flex flex-col items-center justify-center text-center gap-2 md:gap-3">
+                <span class="material-symbols-outlined text-2xl md:text-3xl text-primary transition-all duration-300">workspace_premium</span>
+                <span class="font-label text-[10px] uppercase tracking-widest leading-tight">Agile Scrum</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+    ============================================================================
+    CONNECT / CONTACT SECTION
+    ============================================================================
+-->
+<section class="bg-zinc-950 w-full py-16 md:py-32 px-4 md:px-8 overflow-hidden relative border-t border-white/5" id="connect">
+    <div class="max-w-7xl mx-auto flex flex-col items-center relative">
+        <span class="font-label text-[10px] tracking-[0.6em] text-zinc-500 uppercase mb-4 md:mb-8">END OF THE LINE</span>
+        <h2 class="font-headline text-4xl md:text-7xl lg:text-9xl font-bold uppercase tracking-tighter leading-none mb-6 md:mb-12">
+            LET'S <span class="text-cyan-400">CONNECT.</span>
+        </h2>
+        <p class="font-body text-base md:text-xl text-zinc-400 max-w-2xl text-center mx-auto mb-8 md:mb-20">
+            Whether you have a role in mind or just want to talk — I'm always open.
+        </p>
+        
+        <!-- Contact Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 w-full mb-12 md:mb-16" role="list">
+            <div class="p-4 md:p-8 bg-zinc-900/50 card-hover-cyan flex flex-col items-center gap-3 md:gap-4 group hover:bg-zinc-800/50 transition-colors border border-white/5">
+                <span class="material-symbols-outlined text-cyan-400 text-xl md:text-2xl transition-all duration-300">mail</span>
+                <div class="text-center">
+                    <span class="font-label text-[10px] text-zinc-500 uppercase tracking-widest block mb-1">Email</span>
+                    <p class="font-headline font-bold text-base md:text-lg">ahmadakbar955@gmail.com</p>
+                </div>
+            </div>
+            <div class="p-4 md:p-8 bg-zinc-900/50 card-hover-cyan flex flex-col items-center gap-3 md:gap-4 group hover:bg-zinc-800/50 transition-colors border border-white/5">
+                <span class="material-symbols-outlined text-cyan-400 text-xl md:text-2xl transition-all duration-300">call</span>
+                <div class="text-center">
+                    <span class="font-label text-[10px] text-zinc-500 uppercase tracking-widest block mb-1">Phone (PK)</span>
+                    <p class="font-headline font-bold text-base md:text-lg">+92 304 4244436</p>
+                </div>
+            </div>
+            <div class="p-4 md:p-8 bg-zinc-900/50 card-hover-cyan flex flex-col items-center gap-3 md:gap-4 group hover:bg-zinc-800/50 transition-colors border border-white/5">
+                <span class="material-symbols-outlined text-cyan-400 text-xl md:text-2xl transition-all duration-300">location_on</span>
+                <div class="text-center">
+                    <span class="font-label text-[10px] text-zinc-500 uppercase tracking-widest block mb-1">Location</span>
+                    <p class="font-headline font-bold text-base md:text-lg">Lahore, Pakistan</p>
+                </div>
+            </div>
+            <div class="p-4 md:p-8 bg-zinc-900/50 card-hover-cyan flex flex-col items-center gap-3 md:gap-4 group hover:bg-zinc-800/50 transition-colors border border-white/5">
+                <span class="material-symbols-outlined text-cyan-400 text-xl md:text-2xl transition-all duration-300">share</span>
+                <div class="text-center">
+                    <span class="font-label text-[10px] text-zinc-500 uppercase tracking-widest block mb-1">LinkedIn</span>
+                    <p class="font-headline font-bold text-base md:text-lg">linkedin.com/in/muhammadahmad</p>
+                </div>
+            </div>
+            <div class="p-4 md:p-8 bg-zinc-900/50 card-hover-cyan flex flex-col items-center gap-3 md:gap-4 group hover:bg-zinc-800/50 transition-colors border border-white/5">
+                <span class="material-symbols-outlined text-cyan-400 text-xl md:text-2xl transition-all duration-300">language</span>
+                <div class="text-center">
+                    <span class="font-label text-[10px] text-zinc-500 uppercase tracking-widest block mb-1">Website</span>
+                    <p class="font-headline font-bold text-base md:text-lg">muhammadahmad.info</p>
+                </div>
+            </div>
+            <div class="p-4 md:p-8 bg-zinc-900/50 card-hover-cyan flex flex-col items-center gap-3 md:gap-4 group hover:bg-zinc-800/50 transition-colors border border-white/5">
+                <span class="material-symbols-outlined text-cyan-400 text-xl md:text-2xl transition-all duration-300">dialpad</span>
+                <div class="text-center">
+                    <span class="font-label text-[10px] text-zinc-500 uppercase tracking-widest block mb-1">Phone (UK)</span>
+                    <p class="font-headline font-bold text-base md:text-lg">+44 7342 882804</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Buttons Area -->
+        <div class="relative w-full flex flex-col items-center">
+            <div class="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-headline text-[220px] font-black text-white/[0.03] pointer-events-none select-none tracking-tighter">CONTACT</div>
+            <div class="flex flex-col md:flex-row gap-3 md:gap-6 items-center relative z-10 w-full px-4">
+                <button class="bg-cyan-400 text-zinc-950 px-6 md:px-12 py-3 md:py-5 w-full md:w-auto font-headline font-bold uppercase tracking-widest text-sm hover:scale-105 transition-transform flex items-center justify-center gap-2 md:gap-3">
+                    SEND MESSAGE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </button>
+                <button class="border border-white/20 text-white px-6 md:px-12 py-3 md:py-5 w-full md:w-auto font-headline font-bold uppercase tracking-widest text-sm hover:bg-white/5 transition-colors flex items-center justify-center gap-2 md:gap-3">
+                    <span class="material-symbols-outlined text-sm">open_in_new</span> VIEW LINKEDIN
+                </button>
+            </div>
+        </div>
+        
+        <!-- Copyright Footer -->
+        <div class="mt-20 md:mt-40 pt-8 md:pt-12 border-t border-white/5 w-full text-center">
+            <div class="text-base md:text-lg font-bold text-cyan-400 font-headline tracking-tighter uppercase mb-2 md:mb-4">MUHAMMAD AHMAD</div>
+            <p class="font-label uppercase tracking-[0.2em] text-[10px] text-zinc-600">
+                © 2024 Muhammad Ahmad. Crafted with precision.
+            </p>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Mobile Menu Toggle Script -->
+<script>
+document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+    const menu = document.getElementById('mobile-menu');
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !isExpanded);
+    menu.classList.toggle('hidden');
+});
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('mobile-menu')?.classList.add('hidden');
+        document.getElementById('mobile-menu-btn')?.setAttribute('aria-expanded', 'false');
+    });
+});
+</script>
+</body>
+</html>
