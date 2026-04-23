@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Muhammad Ahmad — Webflow & Frontend Developer · Lahore → Worldwide</title>
+<meta name="description" content="Muhammad Ahmad — Webflow Developer, Frontend Engineer & Funnel Builder. Editorial portfolio of pixel-perfect, performance-first websites." />
+<meta name="author" content="Muhammad Ahmad" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,400;9..144,600;9..144,800;9..144,900;9..144,400,1;9..144,800,1&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/font/lucide.css" />
+<link rel="stylesheet" href="styles.css" />
+
+<meta property="og:title" content="Muhammad Ahmad — Webflow & Frontend Developer" />
+<meta property="og:description" content="Editorial portfolio of pixel-perfect, performance-first websites." />
+<meta property="og:type" content="website" />
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <span class="loader__count" id="loader-count">0</span>
+    <span class="loader__pct">%</span>
+  </div>
+  <div class="loader__bar"><span id="loader-bar"></span></div>
+</div>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follow" id="cursor-follow"></div>
+
+<!-- Marquee ticker (top) -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>★ Available for select projects — Q2 2026</span><span>·</span>
+    <span>Webflow · Shopify · React · Funnels</span><span>·</span>
+    <span>Lahore → Worldwide</span><span>·</span>
+    <span>★ Available for select projects — Q2 2026</span><span>·</span>
+    <span>Webflow · Shopify · React · Funnels</span><span>·</span>
+    <span>Lahore → Worldwide</span><span>·</span>
+  </div>
+</div>
+
+<!-- Navbar -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand" data-magnet>
+    <span class="nav__mark">M.A</span>
+    <span class="nav__sub">Studio · est. 2020</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#work" data-magnet>Work</a>
+    <a href="#about" data-magnet>About</a>
+    <a href="#expertise" data-magnet>Craft</a>
+    <a href="#archive" data-magnet>Archive</a>
+    <a href="#contact" data-magnet>Contact</a>
+  </nav>
+  <div class="nav__actions">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" data-magnet>
+      <i class="icon icon-sun" id="theme-icon"></i>
+    </button>
+    <button class="nav__menu" id="nav-menu" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer">
+  <a href="#work">Work</a>
+  <a href="#about">About</a>
+  <a href="#expertise">Craft</a>
+  <a href="#archive">Archive</a>
+  <a href="#contact">Contact</a>
+  <div class="drawer__foot">
+    <a href="mailto:ahmadazhar955@gmail.com">ahmadazhar955@gmail.com</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ===== HERO — editorial split ===== -->
+  <section class="hero">
+    <div class="hero__meta">
+      <div><span class="kicker">PORTFOLIO</span><span class="kicker">N° 02 / 2026</span></div>
+      <div><span class="kicker">LAHORE 31.5°N</span><span class="kicker" id="clock">--:--:--</span></div>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="hero__row" data-split>
+        <span class="hero__word">Building&nbsp;</span>
+        <em class="hero__word hero__word--ital">the&nbsp;</em>
+        <span class="hero__word">web,</span>
+      </span>
+      <span class="hero__row" data-split>
+        <span class="hero__word">one&nbsp;</span>
+        <em class="hero__word hero__word--ital">pixel&nbsp;</em>
+        <span class="hero__word">at</span>
+      </span>
+      <span class="hero__row" data-split>
+        <span class="hero__word">a&nbsp;time.</span>
+        <span class="hero__dot"></span>
+      </span>
+    </h1>
+
+    <div class="hero__bottom">
+      <div class="hero__intro">
+        <p class="kicker kicker--ink">— Muhammad Ahmad</p>
+        <p>Webflow Developer, Frontend Engineer &amp; Funnel Builder shipping fast, beautiful, conversion-focused websites for studios in the US, UK &amp; EU.</p>
+        <div class="hero__cta">
+          <a href="#work" class="btn btn--ink" data-magnet><span>See the work</span><i class="icon icon-arrow-up-right"></i></a>
+          <a href="#contact" class="btn btn--ghost" data-magnet><span>Start a project</span></a>
+        </div>
+      </div>
+      <div class="hero__numbers">
+        <div><strong data-counter="4">0</strong><span>Years</span></div>
+        <div><strong data-counter="20">0</strong><span>Projects</span></div>
+        <div><strong data-counter="3">0</strong><span>Continents</span></div>
+      </div>
+    </div>
+
+    <div class="hero__scroll"><span></span> SCROLL</div>
+  </section>
+
+  <!-- ===== MARQUEE BAND ===== -->
+  <section class="band" aria-hidden="true">
+    <div class="band__track">
+      <span>Webflow</span><i>✦</i>
+      <span>Shopify</span><i>✦</i>
+      <span>React</span><i>✦</i>
+      <span>TypeScript</span><i>✦</i>
+      <span>Funnels</span><i>✦</i>
+      <span>Liquid</span><i>✦</i>
+      <span>Tailwind</span><i>✦</i>
+      <span>UI / UX</span><i>✦</i>
+      <span>Webflow</span><i>✦</i>
+      <span>Shopify</span><i>✦</i>
+      <span>React</span><i>✦</i>
+      <span>TypeScript</span><i>✦</i>
+      <span>Funnels</span><i>✦</i>
+      <span>Liquid</span><i>✦</i>
+      <span>Tailwind</span><i>✦</i>
+      <span>UI / UX</span><i>✦</i>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about section">
+    <div class="section__head">
+      <span class="section__num">[ 01 ]</span>
+      <span class="section__label">About — the maker</span>
+    </div>
+    <div class="about__grid">
+      <h2 class="about__big reveal-words">A designer's eye, a developer's hands — and a tester's discipline.</h2>
+      <div class="about__col">
+        <p>I'm <strong>Muhammad Ahmad</strong>, based in Lahore, Pakistan. For four years I've shipped Webflow sites, Shopify storefronts, React frontends and full marketing funnels for agencies and SaaS companies across the US, UK and EU.</p>
+        <p>Three rules guide every project: <em>pixel-perfect execution</em>, <em>fast load times</em>, and <em>code that's a joy to hand off</em>.</p>
+        <ul class="about__list">
+          <li><span>01</span> End-to-end delivery — Figma to live site</li>
+          <li><span>02</span> Performance-first builds (Lighthouse 90+)</li>
+          <li><span>03</span> Cross-browser, cross-device QA</li>
+          <li><span>04</span> Clean handoff — your team can own it</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK — horizontal drag rail ===== -->
+  <section id="work" class="work section">
+    <div class="section__head">
+      <span class="section__num">[ 02 ]</span>
+      <span class="section__label">Selected work — drag or scroll →</span>
+    </div>
+    <h2 class="work__title reveal-words">Featured projects, shipped end-to-end.</h2>
+    <div class="rail" id="rail">
+      <div class="rail__track" id="rail-track"></div>
+    </div>
+    <div class="rail__hint"><i class="icon icon-move-horizontal"></i> drag · scroll · click</div>
+  </section>
+
+  <!-- ===== EXPERTISE — accordion ===== -->
+  <section id="expertise" class="expertise section">
+    <div class="section__head">
+      <span class="section__num">[ 03 ]</span>
+      <span class="section__label">Craft — what I'm best at</span>
+    </div>
+    <h2 class="expertise__title reveal-words">Six disciplines, one obsession with quality.</h2>
+    <div class="acc" id="acc"></div>
+  </section>
+
+  <!-- ===== EXPERIENCE — vertical zigzag timeline ===== -->
+  <section id="experience" class="exp section">
+    <div class="section__head">
+      <span class="section__num">[ 04 ]</span>
+      <span class="section__label">Experience — where I've shipped</span>
+    </div>
+    <div class="exp__list" id="exp-list"></div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="serv section">
+    <div class="section__head">
+      <span class="section__num">[ 05 ]</span>
+      <span class="section__label">Services — what I can build for you</span>
+    </div>
+    <div class="serv__grid" id="serv-grid"></div>
+  </section>
+
+  <!-- ===== ARCHIVE — Certs + Education combined ===== -->
+  <section id="archive" class="arch section">
+    <div class="section__head">
+      <span class="section__num">[ 06 ]</span>
+      <span class="section__label">Archive — credentials &amp; foundations</span>
+    </div>
+
+    <h3 class="arch__sub">Certifications</h3>
+    <div class="cert-grid" id="cert-grid"></div>
+
+    <h3 class="arch__sub" style="margin-top:6rem">Education</h3>
+    <div class="edu-grid" id="edu-grid"></div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact section">
+    <div class="section__head">
+      <span class="section__num">[ 07 ]</span>
+      <span class="section__label">Contact — let's build</span>
+    </div>
+
+    <h2 class="contact__big reveal-words">
+      <span>Have a project? </span>
+      <em>Let's talk.</em>
+    </h2>
+
+    <div class="contact__cta">
+      <a href="mailto:ahmadazhar955@gmail.com" class="btn-blob" data-magnet>
+        <span>Start a project →</span>
+      </a>
+    </div>
+
+    <div class="contact__grid">
+      <a href="mailto:ahmadazhar955@gmail.com" class="ch">
+        <span class="ch__k">Email</span>
+        <strong>ahmadazhar955@gmail.com</strong>
+        <i class="icon icon-arrow-up-right"></i>
+      </a>
+      <a href="tel:+923044044436" class="ch">
+        <span class="ch__k">Phone · PK</span>
+        <strong>+92 304 4044436</strong>
+        <i class="icon icon-arrow-up-right"></i>
+      </a>
+      <a href="tel:+447346893954" class="ch">
+        <span class="ch__k">Phone · UK</span>
+        <strong>+44 7346 893954</strong>
+        <i class="icon icon-arrow-up-right"></i>
+      </a>
+      <a href="#" class="ch">
+        <span class="ch__k">Location</span>
+        <strong>Lahore, Pakistan</strong>
+        <i class="icon icon-map-pin"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="foot">
+    <div class="foot__big" data-marquee>
+      <span>AVAILABLE FOR WORK ✦ </span>
+      <span>AVAILABLE FOR WORK ✦ </span>
+      <span>AVAILABLE FOR WORK ✦ </span>
+    </div>
+    <div class="foot__row">
+      <p>© 2026 Muhammad Ahmad. Crafted with precision.</p>
+      <p>Built end-to-end · Tested everywhere</p>
+      <a href="#top" class="foot__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+</main>
+
+<!-- Project modal -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal__bg" data-close></div>
+  <div class="modal__panel">
+    <button class="modal__x" data-close aria-label="Close"><i class="icon icon-x"></i></button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/InertiaPlugin.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
